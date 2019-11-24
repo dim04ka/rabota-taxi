@@ -1,0 +1,242 @@
+
+@import "header.css";
+@import "header-section.css";
+@import "what.css";
+@import "offer.css";
+@import "akcija.css";
+@import "dohod.css";
+@import "work.css";
+@import "otziv.css";
+@import "friend.css";
+@import "maps.css";
+@import "footer.css";
+
+@import "section-ecpv.css";
+@import "section-135.css";
+@import "block1.css";
+@import "block2.css";
+@import "block3.css";
+@import "block4.css";
+@import "block5.css";
+@import "vakan-section.css";
+@import "about-section.css";
+@import "blog-section.css";
+
+@import "modal.css";
+@import "slick.css";
+@import "animate.css";
+@import "animate-custom.css";
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Black.woff") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../fonts/ProximaNova-Bold.woff") format("truetype"); }
+
+@font-face {
+  font-family: "Proxima";
+  src: url("../fonts/ProximaNova.ttf") format("truetype"); }
+
+:root {
+    --default: Proxima, sans-serif;
+    --gray: #828282;
+    --blue: #A3D3FF;
+    --yellow: #F56B1E;
+    --white: #fff;
+    --black: #000;
+    --gold: #c8a35f;
+    --dark: #2f343a;
+    --graylight: #F1F1F1;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--default);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    @media (max-width: 1180px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+        @media (max-width: 480px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+.hlebnie {
+    text-align: center;
+    font-size: 30px;
+    color: #a8a6a6;
+    padding: 50px 0;
+
+    @media(max-width: 480px){
+        padding: 0px 0 30px;
+        font-size: 14px;
+    }
+
+    &__link {
+        text-decoration-line: none;
+        color: #a8a6a6;
+        transition: all .3s;
+
+        &:hover {
+            color:  #737171;
+        }
+        
+    }
+
+    &__active {
+        color:  #737171;
+    }
+}
+
+.modal {
+    position: absolute;
+    height: 100vh;
+    background: #D1CAB3;
+    z-index: 10;
+    width: 210px;
+    left: 50%;
+    margin-left: -105px;
+    transform: translateX(-1495px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all .3s;
+
+    @media(max-width: 1200px){
+        width: 100%;
+        left: 0; 
+        margin-left: 0; 
+        transform: translateX(-100%);
+        overflow: auto;
+        height: 100%;
+    }
+
+    &-active {
+        transform: translateX(-495px);
+
+        @media(max-width: 1200px){
+            transform: translateX(0%);
+        }
+    }
+
+    &:before {
+        content: '';
+        width: 1500px;
+        height: 100vh;
+        background: #D1CAB3;
+        position: absolute;
+        transform: translateX(-1500px);
+    }
+
+    &__close{
+        display: none;
+        text-align: center;
+        padding-top: 80px;
+
+        @media(max-width: 1200px){
+            display: block;
+        }
+
+        span {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+
+            &:hover {
+                &:before ,
+                &:after {
+                    background: #5c5b5b;
+                }
+            }
+
+            &:before {
+                content: '';
+                width: 71px;
+                height: 5px;
+                background: #1e7fa3;
+                display: block;
+                position: absolute;
+                top: 30px;
+                transform: rotate(45deg);
+                left: -8px;
+                transition: all .3s;
+  
+            }
+             &:after {
+                content: '';
+                width: 71px;
+                height: 5px;
+                background: #1e7fa3;
+                display: block;
+                position: absolute;
+                top: 30px;
+                transform: rotate(-45deg);
+                left: -8px;
+                 transition: all .3s;
+ 
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        padding-top: 160px;
+
+        @media(max-width: 1200px){
+            padding-top: 70px;
+        }
+
+        li {
+            text-align: center;
+            padding: 10px 0;
+        }
+    }
+
+
+    a {
+        text-decoration: none;
+        color: #5c5b5b;
+        font-family: "Proxima";
+        font-size: 21px;
+        font-weight: 700;
+        transition: all .3s;
+
+        &:hover {
+            color: #1e7fa3;
+        }
+    }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom : 0;
+    background: #b8b4b4;
+    opacity: .8;
+    z-index: 5;
+    display: none;
+}

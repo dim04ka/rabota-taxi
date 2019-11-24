@@ -1,0 +1,280 @@
+.otziv{
+    
+  padding: 100px 0;
+  background-color: #dceffc;
+  overflow-x: hidden;
+
+  @media(max-width: 1024px) {
+    padding: 50px 0;
+  }
+
+  @media(max-width: 480px) {
+    padding: 20px 0;
+    overflow: hidden;
+  }
+
+  &__container {
+      text-align: center;
+      margin-bottom: 50px;
+
+      @media(max-width: 768px){
+        margin-bottom: 0px;
+      }
+  }
+
+  &__title {
+      font-family: "Proxima Nova";
+      font-size: 48px;
+      font-weight: 700;
+      color: #403f3f;
+      letter-spacing: 3px;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+
+      @media(max-width: 768px){
+        font-size: 20px;
+      }
+
+
+  }
+
+  &__bg{
+      width: 240px;
+      height: 20px;
+      background-color: #87d04c;
+      position: relative;
+      top: -37px;
+      margin: 0 auto;
+      transform: translateX(-20%);
+
+      @media(max-width: 768px){
+        width: 140px;
+        height: 9px;
+        top: -12px;
+        transform: translateX(-13%)
+      }
+  }
+}
+
+.otziv__blocks {
+  display: flex;
+  
+
+  @media(max-width: 950px) {
+    flex-wrap: wrap;
+  }
+}
+
+.otziv__block {
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  @media(max-width: 950px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &-caption {
+    min-height: 590px;
+
+    @media(max-width: 950px){
+      min-height: auto;
+    }
+
+    @media(max-width: 480px){
+      min-height: 315px;
+    }
+
+  }
+
+  &-photo {
+    /* background-image: url(../src/img/photo.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    width: 170px;
+    height: 170px; 
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: 10px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
+    overflow: hidden;
+    
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media(max-width: 480px){
+      width: 107px;
+      height: 107px;
+      margin-bottom: 20px;
+    }
+  
+  }
+
+  &-title {
+    color: #363535;
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+
+    @media(max-width: 480px){
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-disc {
+    color: #696969;
+    font-family: "Proxima";
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+    @media(max-width: 480px){
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+  }
+  
+  a {
+    color: #036db8;
+    /* color: #04b159; */
+    font-family: "Proxima";
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 5px solid #036db8;
+    padding-bottom: 10px;
+
+    @media(max-width: 480px){
+      font-size: 17px;
+      padding-bottom: 0px;
+      border-bottom: 3px solid #036db8;
+    }
+  }
+}
+
+.card{
+
+  @media(max-width: 650px){
+    margin-top: -70px;
+    margin-bottom: -60px;
+  }
+
+  &__photos {
+    position: absolute;
+    border: 8px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+    filter: grayscale(100%);
+
+    &:hover{
+      border: 8px solid #adf870;
+      filter: grayscale(0%);
+    }
+
+    &-1 {
+      top: 15px;
+      left: 0;
+    }
+
+    &-2 {
+      top: 100px;
+      right: -40px;
+    }
+
+    &-3 {
+      right: 10px;
+      bottom: 15px;
+    }
+
+    &-4 {
+      bottom: 0;
+      left: 88px;
+    }
+
+    &-5 {
+      bottom: 125px;
+      left: -35px;
+    }
+  }
+
+
+  &__border {
+    width: 470px;
+    height: 470px;
+    border: 3px solid #c2c2c2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+
+
+    @media(max-width: 650px) {
+      transform: scale(.6);
+      left: 50%;
+      margin-left: -235px;
+    }
+
+  }
+
+  &__green {
+    background-color: #adf870;
+    width: 312px;
+    height: 312px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__photo {
+
+
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .3s;
+    overflow: hidden;
+
+
+    img {
+      transition: all .3s;
+      width: 100%;
+      height: auto;
+      border: 8px solid white;
+      border-radius: 50%;
+      filter: grayscale(100%);
+    }
+
+    &:hover {
+      
+      border: 8px solid #adf870;
+      filter: grayscale(0%);
+    }
+
+  }
+  
+
+}
+
+.active-photo {
+  filter: grayscale(0%) !important;
+  border: 8px solid #adf870;
+}

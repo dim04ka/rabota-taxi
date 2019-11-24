@@ -1,0 +1,239 @@
+.section-ecpv{
+    
+  padding: 10px 0;
+  overflow-x: hidden;
+
+  @media(max-width: 1024px) {
+    padding: 50px 0;
+  }
+
+  @media(max-width: 480px) {
+    padding: 20px 0;
+    overflow: hidden;
+  }
+
+  &__container {
+      text-align: center;
+      margin-bottom: 50px;
+
+      @media(max-width: 768px){
+        margin-bottom: 25px;
+      }
+  }
+
+  &__title {
+      font-family: "Proxima";
+      font-size: 48px;
+      font-weight: bold;
+      color: #403f3f;
+      letter-spacing: 3px;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      max-width: 840px;
+
+      @media(max-width: 768px){
+        font-size: 20px;
+      }
+
+
+  }
+
+  &__bg{
+    width: 520px;
+    height: 20px;
+    background-color: #87d04c;
+    position: relative;
+    top: -102px;
+    margin: 0 auto;
+    transform: translateX(-37%);
+
+      @media(max-width: 768px){
+        width: 140px;
+        height: 9px;
+        top: -12px;
+        transform: translateX(-13%)
+      }
+  }
+
+  &__title-dectop {
+
+    @media(max-width: 480px){
+      display: none;
+    }
+  }
+
+  &__title-mob {
+    display: none;
+
+    @media(max-width: 480px){
+      display: block;
+    }
+  }
+  
+  &-bg{
+    background-color: #dceffc;
+
+    &__disc {
+      color: #1f1e1e;
+      font-family: "Proxima";
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 1.8px;
+      max-width: 960px;
+      padding: 80px 0 130px;
+      position: relative;
+
+      @media(max-width: 768px){
+        font-size: 20px;
+      }
+
+      @media(max-width: 480px){
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.7px;
+        padding: 25px 0 40px;
+        min-height: 150px;
+      }
+    }
+
+    &__quest {
+      position: absolute;
+
+      &-1 {
+        background-image: url('../src/img/ecpv/quest.png');
+        width: 84px;
+        height: 129px;
+        top: 110px;
+        left: 995px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &-2 {
+        background-image: url('../src/img/ecpv/quest.png');
+        width: 37px;
+        height: 62px;
+        bottom: 25px;
+        left: 60%;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media(max-width: 480px){
+          bottom: 0px;
+          left: 70%;
+          transform: rotate(23deg);
+
+        }
+      }
+      &-3 {
+        background-image: url('../src/img/ecpv/quest.png');
+        width: 25px;
+        height: 42px;
+        bottom: 65px;
+        left: 12%;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media(max-width: 480px){
+          bottom: 7px;
+          left: 12%;
+          
+        }
+      }
+    }
+  }
+
+
+}
+
+.section-ecpv__head {
+  padding: 115px 0 80px;
+
+  @media(max-width: 768px){
+    padding: 30px 0;
+  }
+
+  &-title {
+    color: #161616;
+    font-family: "Proxima Nova";
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 900px;
+    margin-bottom: 25px;
+
+    @media(max-width: 480px){
+      font-size: 16px;
+      font-family: "Proxima Nova";
+      letter-spacing: 0.8px;
+    }
+  }
+}
+.head-disc {
+  display: flex;
+
+  @media(max-width: 768px){
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    font-family: "Proxima";
+    font-weight: bold;
+    color: #4a4a49;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    max-width: 780px;
+    padding-right: 20px;
+
+    @media(max-width: 480px){
+      font-size: 14px;
+      margin-bottom: 15px;
+      padding-right: 0px;
+    }
+
+    span {
+      font-family: "Proxima Nova";
+      color: #191919;
+    }
+  }
+
+  &__img {
+    background-image: url('../src/img/ecpv/img1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 298px;
+    height: 213px;
+    position: relative;
+    top: -40px;
+
+    @media(max-width: 768px){
+      top: 0px;
+    }
+  }
+  &__img-3 {
+    background-image: url('../src/img/ecpv/img3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 274px;
+    position: relative;
+    top: -40px;
+
+    @media(max-width: 768px){
+      top: 0px;
+    }
+  }
+}
+
+.section-ecpv-item {
+  display: flex;
+
+  @media(max-width:1024px){
+    flex-direction: column-reverse;
+  }
+
+  img {
+    margin-left: 40px;
+    margin-right: 95px;
+  }
+}

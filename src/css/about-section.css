@@ -1,0 +1,322 @@
+.about{
+  overflow: hidden;
+  padding: 50px 0;
+
+  @media(max-width: 1024px) {
+    padding: 20px 0;
+  }
+
+  @media(max-width: 480px) {
+    padding: 10px 0;
+  }
+
+  &__container {
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media(max-width: 768px){
+      margin-bottom: 25px;
+    }
+  }
+
+  &__title {
+    font-family: "Proxima";
+    font-size: 48px;
+    font-weight: bold;
+    color: #403f3f;
+    letter-spacing: 3px;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    max-width: 840px;
+
+    @media(max-width: 768px){
+      font-size: 20px;
+    }
+
+  }
+
+  &__bg{
+    width: 200px;
+    height: 20px;
+    background-color: #87d04c;
+    position: relative;
+    top: -31px;
+    margin: 0 auto;
+    transform: translateX(-25%);
+
+      @media(max-width: 768px){
+        width: 140px;
+        height: 9px;
+        top: -12px;
+        transform: translateX(-13%)
+      }
+  }
+
+  main {
+    position: relative;
+
+
+    .quot {
+      background-image: url('../src/img/about/qu.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      /* display: block; */
+      width: 251px;
+      height: 180px;
+      top: -20px;
+      left: -20px;
+
+      @media(max-width: 480px){
+        width: 70px;
+        height: 50px;
+        top: -5px;
+        left: -5px;
+      }
+    }
+
+    p {
+      color: #1f1f1f;
+      font-family: "Proxima";
+      font-size: 30px;
+      margin-bottom: 50px;
+      position: relative;
+
+      @media(max-width: 480px){
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+
+      span.name{
+        color: #1c5191;
+        font-family: "Proxima Nova Bold";
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      &.direct {
+        color: #1c5191;
+        font-family: "Proxima Nova Bold";
+        margin-bottom:100px;
+      }
+    }
+  }
+
+  .registration {
+    &__title {
+      color: #4a4a49;
+      font-family: "Proxima Nova Bold";
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 130px;
+
+      @media(max-width: 480px){
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .item {
+      display: flex;
+      margin-bottom: 100px;
+
+      @media(max-width: 767px){
+        padding-bottom: 70px;
+        position: relative;
+        margin-bottom: 50px;
+      }
+
+      &-revers {
+        flex-direction: row-reverse;
+
+        .item__left-number {
+          text-align: right;
+        }
+
+        .item__left span {
+          background-image: url('../src/img/about/locat.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 30px;
+          height: 41px;
+
+          @media(max-width: 767px){
+
+            width: 12px;
+            height: 17px;
+          }
+        }
+
+        .item__right-img {
+           margin-left: 0px;
+
+           @media(max-width: 1024px){
+            width: 100%;
+            transform: translateX(-15px);
+           }
+           @media(max-width: 767px){
+            transform: translateX(-55px);
+           }
+
+        }
+        
+      }
+
+      &__left {
+        width: 50%;
+
+        @media(max-width: 767px){
+          width: auto;
+        }
+
+        &-number {
+          color: #d6d6d5;
+          font-family: "Proxima Nova Bold";
+          font-size: 162px;
+          line-height: 125px;
+          margin-bottom: 20px;
+          
+          @media(max-width: 767px){
+            font-size: 72px;
+          }
+        }
+        &-disc {
+          color: #242424;
+          font-family: "Proxima Nova Bold";
+          font-size: 36px;
+          max-width: 409px;
+          margin-left: auto;
+          text-align: center;
+          margin-right: 50px;
+
+          @media(max-width:1024px){
+            margin-right: 0px;
+          }
+
+          @media(max-width:767px){
+            font-size: 14px;
+            position: absolute;
+            max-width: 185px;
+            left: 50%;
+            margin-left: -90px;
+            bottom: -10px;
+          }
+
+          &-all {
+            max-width: 100%;
+
+            @media(max-width: 767px){
+              max-width: 185px;
+            }
+
+            &-margin {
+              margin-top: 100px;
+            }
+          }
+
+          a {
+            text-decoration-line: none;
+            font-family: "Proxima";
+            color: #242424;
+            transition: all .3s;
+            display: block;
+
+            &:hover {
+              color: #1fca16;
+            }
+          }
+
+           span{
+            background-image: url('../src/img/about/call-answer.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 32px;
+            height: 30px;
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            top: 5px;
+
+            @media(max-width: 767px){
+              width: 12px;
+              height: 11px;
+              background-size: contain;
+              top: 2px;
+              margin-right: 5px;
+            }
+          } 
+        }
+      }
+
+      &__right {
+        width: 50%;
+
+        @media(max-width: 767px){
+          width: 100%;
+        }
+
+        &-img {
+          background-image: url('../src/img/about/img1.jpg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 504px;
+          height: 462px;
+          margin-left: 50px;
+
+          @media(max-width: 767px){
+            width: 100%;
+            height: auto;
+            min-height: 200px;
+            margin-left: 15px;
+            position: relative;
+            left: 40px;
+            top: -15px;
+          }
+          @media(max-width: 480px){
+            
+            left: 35px;
+            top: -15px ;
+           }
+
+          &-2 {
+            background-image: url('../src/img/about/img2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+
+          &-3 {
+            background-image: url('../src/img/about/img3.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+
+          &-4 {
+            background-image: url('../src/img/about/img4.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+
+          &-5 {
+            background-image: url('../src/img/about/img5.jpeg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+
+          &-6 {
+            background-image: url('../src/img/about/img6.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}

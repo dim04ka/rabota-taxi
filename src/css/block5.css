@@ -1,0 +1,195 @@
+.block5 {
+  background-color: #f0f0f0;
+  padding: 50px 0 70px;
+
+  @media(max-width: 480px){
+    padding: 20px 0 20px;
+    margin-top: -110px;
+    position: relative;
+  }
+
+  &__logo-135 {
+    background-image: url('../src/img/block/b-135.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 117px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @media(max-width: 480px){
+      transform: scale(.7);
+      margin-bottom: 10px;
+    }
+  }
+
+  &__logo-iq {
+    background-image: url('../src/img/logo/iq.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 117px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @media(max-width: 480px){
+      transform: scale(.7);
+      margin-bottom: 10px;
+    }
+  }
+  &__logo-uber {
+    background-image: url('../src/img/logo/uber.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 117px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @media(max-width: 480px){
+      transform: scale(.7);
+      margin-bottom: 10px;
+    }
+  }
+
+  &__logo-v10 {
+    background-image: url('../src/img/logo/v10.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 117px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @media(max-width: 480px){
+      transform: scale(.7);
+      margin-bottom: 10px;
+    }
+  }
+  
+  &__logo-euro {
+    background-image: url('../src/img/logo/euro.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 117px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @media(max-width: 480px){
+      transform: scale(.7);
+      margin-bottom: 10px;
+    }
+  }
+
+  &__logo-com {
+    background-image: url('../src/img/logo/comandir.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 117px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @media(max-width: 480px){
+      transform: scale(.7);
+      margin-bottom: 10px;
+    }
+  }
+  &__logo-laim {
+    background-image: url('../src/img/logo/laim.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 117px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @media(max-width: 480px){
+      transform: scale(.7);
+      margin-bottom: 10px;
+    }
+  }
+
+  &__logo-yandex {
+    background-image: url('../src/img/logo/yandex.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 117px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @media(max-width: 480px){
+      transform: scale(.7);
+      margin-bottom: 10px;
+    }
+  }
+
+  &__disc {
+    color: #212020;
+    font-family: "Proxima";
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 1.6px;
+    transition: all 1s;
+
+    @media(max-width: 480px){
+      font-size: 12px;
+    }
+  }
+
+  &__wrap {
+    max-height: 140px;
+    overflow: hidden;
+    transition: all 1s;
+  }
+
+  &__btn {
+
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    margin-top: 25px;
+
+    &-text {
+      color: #2338d1;
+      font-family: "Proxima";
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+
+      @media(max-width: 480px){
+        font-size: 15px;width: 17px;
+        height: 8px;
+      }
+    }
+
+    &-arr {
+      background-image: url('../src/img/block/arr.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 34px;
+      height: 16px;
+      display: inline-block;
+      margin-left: 20px;
+      transition: all .3s;
+
+      @media(max-width: 480px){
+        width: 17px;
+        height: 8px;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,168 @@
+.vakansija{
+  overflow: hidden;
+  padding: 50px 0;
+
+  @media(max-width: 1024px) {
+    padding: 20px 0;
+  }
+
+  @media(max-width: 480px) {
+    padding: 10px 0;
+  }
+
+  &__container {
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media(max-width: 768px){
+      margin-bottom: 25px;
+    }
+}
+
+
+  &__title {
+      font-family: "Proxima";
+      font-size: 48px;
+      font-weight: bold;
+      color: #403f3f;
+      letter-spacing: 3px;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      max-width: 840px;
+
+      @media(max-width: 768px){
+        font-size: 20px;
+      }
+
+
+  }
+
+  &__bg{
+    width: 200px;
+    height: 20px;
+    background-color: #87d04c;
+    position: relative;
+    top: -31px;
+    margin: 0 auto;
+    transform: translateX(-25%);
+
+      @media(max-width: 768px){
+        width: 140px;
+        height: 9px;
+        top: -12px;
+        transform: translateX(-13%)
+      }
+  }
+
+}
+
+ 
+.vakansija__block {
+  .item{
+    display: flex;
+    position: relative;
+
+    @media(max-width: 768px){
+      flex-direction: column;
+    }
+
+    &:not(:last-child):after{
+      content: '';
+      width: 3000px;
+      height: 8px;
+      position: absolute;
+      bottom: 40px;
+      background: #dddddd;
+      left: 50%;
+      transform: translateX(-1500px);
+    }
+
+    &__icon {
+      min-width: 172px;
+      max-width: 172px;
+      height: 172px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+
+      @media(max-width: 480px){
+        max-width: 50px;
+        min-width: 50px;
+        height: 50px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__disc {
+      padding-left: 50px;
+
+      @media(max-width: 480px){
+        padding-left: 0px;
+      }
+
+      h2 {
+        color: #2b2a2a;
+        font-family: "Proxima Nova Bold";
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 1.8px;
+        margin-bottom: 40px;
+        margin-top: 10px;
+        line-height: 30px;
+
+
+        @media(max-width: 480px){
+          font-size: 14px;
+          margin-bottom: 20px;
+          line-height: 20px;
+        }
+      }
+
+      h3 {
+        color: #4a940e;
+        font-family: "Proxima Nova Bold";
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+
+        @media(max-width: 480px){
+          font-size: 12px;
+        }
+      }
+
+      ul {
+        margin-bottom: 70px;
+
+        @media(max-width:480px){
+          margin-bottom: 5px;
+        }
+
+        li {
+          color: #2b2a2a;
+          font-family: "Proxima";
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: 15px;
+          line-height: 30px;
+
+          @media(max-width: 480px){
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .block3-btn {
+        @media(max-width: 480px){
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

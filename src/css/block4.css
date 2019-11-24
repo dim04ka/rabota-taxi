@@ -1,0 +1,112 @@
+.block4{
+  background-color: #dddbdb;
+  padding-top: 70px;
+
+  &-wrapper {
+    display: flex;
+
+    @media(max-width:768px){
+      flex-direction: column;
+    }
+
+    &__item-img {
+      width: 40%;
+      position: relative;
+
+      @media(max-width:768px){
+        width: 100%;
+      }
+
+      img {
+        position: absolute;
+        right: 0;
+
+        @media(max-width: 768px){
+          width: 310px;
+          height: 217px;
+          top: -140px;
+          left: 50%;
+          margin-left: -155px;
+        }
+      }
+    }
+
+    &__item-text{
+      width: 60%;
+
+      @media(max-width:768px){
+        width: 100%;
+        padding-top: 70px;
+      }
+      .block3-btn__btn-blue {
+        @media(max-width: 768px){
+          font-size: 12px;
+          width: 189px;
+          height: 39px;
+          padding-top: 10px;
+        }
+      }
+
+      .text {
+        border-left: 12px solid #2dcb25;
+        padding: 30px 0 30px 30px;
+        margin-bottom: 40px;
+
+        @media(max-width: 768px){
+          padding: 10px 0 10px 10px;
+          margin-bottom: 10px;
+          border-left: 6px solid #2dcb25;
+        }
+
+        &__title {
+          color: #222121;
+          font-family: "Proxima Nova Bold";
+          font-size: 42px;
+          font-weight: bold;
+          text-transform: uppercase;
+
+          @media(max-width: 768px){
+            font-size: 18px;
+          }
+        }
+
+        &__disc {
+          overflow: hidden;
+          position: relative;
+
+          &-text {
+            color: #222121;
+            font-family: "Proxima";
+            font-size: 30px;
+            font-weight: bold;
+            position: relative;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 5;
+
+            @media(max-width: 768px){
+              font-size: 12px;
+            }
+          }
+
+
+         &-line {
+            width: 235px;
+            height: 11px;
+            background-color: #2dcb25;
+            position: absolute;
+            left: 130px;
+            bottom: 9px;
+
+            @media(max-width: 768px){
+              width: 105px;
+              height: 5px;
+              left: 38px;
+              bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

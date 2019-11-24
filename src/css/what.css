@@ -1,0 +1,132 @@
+.what{
+    
+  padding: 100px 0;
+
+  @media(max-width: 768px){
+    padding: 35px 0;
+  }
+
+  &__container {
+      text-align: center;
+      margin-bottom: 100px;
+
+      @media(max-width: 768px){
+        margin-bottom: 10px;
+      }
+  }
+
+  &__title {
+      font-family: "Proxima Nova";
+      font-size: 48px;
+      font-weight: 700;
+      color: #403f3f;
+      letter-spacing: 3px;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+
+      @media(max-width: 768px){
+        font-size: 20px;
+      }
+  }
+
+  &__bg{
+      width: 390px;
+      height: 20px;
+      background-color: #87d04c;
+      position: relative;
+      top: -35px;
+      margin: 0 auto;
+      transform: translateX(-10%);
+
+      @media(max-width: 768px){
+        width: 142px;
+        height: 6px;
+        top: -12px;
+        transform: translateX(-19%);
+      }
+
+  }
+
+  &__wrapper {
+      display: flex;
+      justify-content: space-between;
+
+
+      @media(max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-item {
+          width: 28%;
+
+          @media(max-width: 768px) {
+              width: 33%;
+              margin-bottom: 30px;
+          }
+
+          @media(max-width: 550px) {
+              width: 70%;
+              
+          }
+      }
+
+      &-icon {
+          margin: 0 auto;
+
+          @media(max-width: 768px){
+              transform: scale( .7);
+          }
+
+      }
+
+      &-icon-mob {
+          background-image: url('../src/img/svg/icon_mobile.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 66px;
+          height: 99px;
+          margin-bottom: 25px;
+
+
+      }
+
+      &-icon-mens {
+          background-image: url('../src/img/svg/icon_mens.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          max-width: 191px;
+          width: 100%;
+          height: 107px;
+      }
+
+      &-icon-puzzle {
+          background-image: url('../src/img/svg/icon_puzzle.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          width: 132px;
+          height: 113px;
+      }
+
+      &-disc {
+          font-family: "Proxima Nova";
+          font-size: 24px;
+          font-weight: 700;
+          color: #414040;
+          letter-spacing: 1.5px;
+          text-align: center;
+          padding-top: 30px;
+
+          @media(max-width: 768px){
+              font-size: 14px;
+              padding-top: 0px;
+          }
+
+      }
+  }
+
+}

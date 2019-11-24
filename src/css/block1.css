@@ -1,0 +1,219 @@
+.blockItems {
+  display: flex;
+ 
+  justify-content: center;
+  padding-bottom: 140px;
+  margin-bottom: 50px;
+
+  @media(max-width:1024px){
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
+
+
+
+  & .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+
+    @media(max-width: 1024px){
+      width: 48%;
+      margin-right: 0;;
+    }
+
+    @media(max-width: 480px){
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &-lg {
+      justify-content: flex-end;
+      position: relative;
+      bottom: -110px;
+
+      @media(max-width: 1024px){
+        width: 100%;
+        order: -1;
+        margin-bottom: 30px;
+        bottom: 0px;
+      }
+
+    }
+
+
+    &-logo {
+
+      &-135 {
+        background-image: url("../src/img/block/b-135.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 259px;
+        height: 212px;
+
+        @media(max-width: 480px){
+          width: 123px;
+          height: 100px;
+        }
+      }
+      &-iq {
+        background-image: url("../src/img/logo/iq.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 259px;
+        height: 212px;
+
+        @media(max-width: 480px){
+          width: 123px;
+          height: 100px;
+        }
+      }
+      &-uber {
+        background-image: url("../src/img/logo/uber.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 259px;
+        height: 212px;
+
+        @media(max-width: 480px){
+          width: 123px;
+          height: 100px;
+        }
+      }
+
+      &-v10 {
+        background-image: url("../src/img/logo/v10.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 259px;
+        height: 212px;
+  
+        @media(max-width: 480px){
+          width: 123px;
+          height: 100px;
+        }
+      }
+
+      &-euro {
+        background-image: url("../src/img/logo/euro.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 259px;
+        height: 212px;
+  
+        @media(max-width: 480px){
+          width: 123px;
+          height: 100px;
+        }
+      }
+      &-com {
+        background-image: url("../src/img/logo/comandir.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 259px;
+        height: 212px;
+  
+        @media(max-width: 480px){
+          width: 123px;
+          height: 100px;
+        }
+      }
+      &-laim {
+        background-image: url("../src/img/logo/laim.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 259px;
+        height: 212px;
+  
+        @media(max-width: 480px){
+          width: 123px;
+          height: 100px;
+        }
+      }
+      &-yandex {
+        background-image: url("../src/img/logo/yandex.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 259px;
+        height: 212px;
+  
+        @media(max-width: 480px){
+          width: 123px;
+          height: 100px;
+        }
+      }
+
+
+
+
+
+
+
+    }
+
+  
+
+    &-disc {
+      text-align: center;
+      color: #1d1d1d;
+      font-family: "Proxima";
+      font-weight: bold;
+      font-size: 24px;
+
+      @media(max-width: 480px){
+        font-size: 12px;
+      }
+
+      span {
+        color: #096e9d;
+      }
+    }
+
+    &-icon {
+      margin-bottom: 25px;
+      width: 160px;
+      height: 160px;
+      box-shadow: 1px 2px 9px 1px rgba(86, 84, 84, 0.3);
+      border-radius: 50%;
+
+      @media(max-width: 480px){
+        width: 85px;
+        height: 85px;
+      }
+    }
+
+    &-icon-1 {
+      background-image: url("../src/img/block/b-tel.png");
+      background-size: 47px 93px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media(max-width: 480px){
+        background-size: 25px 49px;
+      }
+    }
+
+    &-icon-3 {
+      background-image: url("../src/img/block/b-face.png");
+      background-size: 97px 97px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media(max-width: 480px){
+        background-size: 49px 49px;
+      }
+    }
+    
+  }
+
+}
