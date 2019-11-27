@@ -9,6 +9,10 @@
       flex-direction: column;
     }
 
+    .block3-btn__btn-blue {
+      text-transform: uppercase;
+    }
+
     &__item-img {
       width: 40%;
       position: relative;

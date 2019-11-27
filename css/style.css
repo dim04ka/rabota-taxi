@@ -9,7 +9,7 @@
       justify-content: space-between;
       flex-wrap: wrap;
       padding-top: 55px;
-      padding-bottom: 10px;
+      padding-bottom: 30px;
   }
     
   .topline__row-animate {
@@ -734,7 +734,7 @@
           font-weight: 400;
           text-transform: uppercase;
           letter-spacing: 0.3rem;
-          margin-bottom: 15px
+          line-height: 2.1875rem
 
           
       }
@@ -764,7 +764,7 @@
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 0.5rem;
-          margin-bottom: 30px
+          margin-bottom: 10px
       }
 
 @media(max-width: 1023px) {
@@ -1562,7 +1562,7 @@
           width: 321px;
           height: 75px;
           text-align: center;
-          padding-top: 20px;
+          padding-top: 22px;
           color: #ffffff;
           font-family: "Proxima";
           font-size: 1.25rem;
@@ -1634,7 +1634,7 @@
           width: 321px;
           height: 75px;
           text-align: center;
-          padding-top: 20px;
+          padding-top: 22px;
 
           color: #ffffff;
           font-family: "Proxima";
@@ -1684,11 +1684,33 @@
             cursor:pointer;
             transition-delay: .1s;
               color: #2eafdf;
-              z-index:8
+              z-index:8;
           }
+
+.akcija__link-blue:hover a {
+              color: #2eafdf;
+            }
 
 .akcija__link-blue:hover:before{
               transform:scale(8.3);
+            }
+
+.akcija__link-blue a {
+            font-family: "Proxima";
+            font-size: 1.375rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            color: var(--white);
+            -webkit-text-decoration-line: none;
+                    text-decoration-line: none;
+            letter-spacing: 0.14063rem
+          }
+
+@media(max-width: 480px){
+          .akcija__link-blue a {
+              font-size: 0.75rem
+          }
             }
 
 .akcija__icons {
@@ -3865,6 +3887,10 @@
   }
     }
 
+.block4-wrapper .block3-btn__btn-blue {
+      text-transform: uppercase;
+    }
+
 .block4-wrapper__item-img {
       width: 40%;
       position: relative
@@ -5390,6 +5416,662 @@
     text-align: right;
   }
 
+@media(max-width: 480px) {
+
+.bonus{
+
+    overflow: hidden
+
+}
+  }
+
+.bonus__container {
+      text-align: center;
+      margin-bottom: 50px
+  }
+
+@media(max-width: 768px){
+
+  .bonus__container {
+        margin-bottom: 25px
+  }
+      }
+
+.bonus__title {
+      font-family: "Proxima";
+      font-size: 3rem;
+      font-weight: bold;
+      color: #403f3f;
+      letter-spacing: 0.1875rem;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      max-width: 840px
+
+
+  }
+
+@media(max-width: 768px){
+
+  .bonus__title {
+        font-size: 1.25rem
+
+
+  }
+      }
+
+.bonus__bg{
+    width: 380px;
+    height: 20px;
+    background-color: #87d04c;
+    position: relative;
+    top: -31px;
+    margin: 0 auto;
+    transform: translateX(-25%)
+  }
+
+@media(max-width: 768px){
+
+  .bonus__bg{
+        width: 140px;
+        height: 9px;
+        top: -12px;
+        transform: translateX(-13%)
+  }
+      }
+
+.bonus-main {
+  overflow: hidden;
+}
+
+.bonus-main__title {
+    font-family: "Proxima Nova";
+    font-size: 2.25rem;
+    color: #161616;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1125rem;
+    margin-bottom: 100px
+  }
+
+@media(max-width: 480px){
+  .bonus-main__title {
+      font-size: 1rem;
+      letter-spacing: 0.05rem;
+      margin-bottom: 30px
+  }
+    }
+
+.bonus-main .itemb {
+    display: flex;
+    margin-bottom: 100px
+  }
+
+@media(max-width: 1200px){
+
+  .bonus-main .itemb {
+      flex-wrap: wrap;
+      flex-direction: column-reverse
+  }
+    }
+
+@media(max-width: 480px){
+
+  .bonus-main .itemb {
+      margin-bottom: 50px
+  }
+    }
+
+@media(max-width: 420px){
+
+  .bonus-main .itemb {
+      margin-bottom: 0px
+  }
+    }
+
+.bonus-main .itemb-revers {
+      flex-direction: row-reverse
+    }
+
+@media(max-width: 1200px){
+
+    .bonus-main .itemb-revers {
+        flex-direction: column-reverse
+    }
+      }
+
+.bonus-main .itemb-revers .itemb__img {
+        background-image: url("../src/img/bonus/bonus2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        right: inherit;
+        width: 879px;
+        height: 391px
+      }
+
+@media(max-width: 1200px){
+
+      .bonus-main .itemb-revers .itemb__img {
+          margin-left: auto;
+          transform: translateX(72px)
+      }
+        }
+
+@media(max-width: 480px){
+
+      .bonus-main .itemb-revers .itemb__img {
+          transform: translateX(-165px);
+          height: 200px
+      }
+        }
+
+.bonus-main .itemb__block {
+      width: 60%;
+    }
+
+.bonus-main .itemb__block-img {
+        width: 40%;
+        position: relative
+        
+      }
+
+@media(max-width: 480px){
+
+      .bonus-main .itemb__block-img {
+          height: 200px
+        
+      }
+        }
+
+@media(max-width: 1200px){
+
+    .bonus-main .itemb__block {
+        width: 100%
+    }
+      }
+
+.bonus-main .itemb__block-text ul {
+          padding: 0;
+          margin: 0
+        }
+
+@media(max-width: 1200px){
+        .bonus-main .itemb__block-text ul {
+            padding-left: 50px
+        }
+          }
+
+@media(max-width: 480px){
+        .bonus-main .itemb__block-text ul {
+            padding-left: 25px
+        }
+          }
+
+.bonus-main .itemb__block-text ul li {
+            color: #4a4a49;
+            font-family: "Proxima Nova Bold";
+            font-size: 2.25rem;
+            letter-spacing: 0.1125rem;
+            line-height: 2.8125rem;
+            list-style-type: none
+          }
+
+@media(max-width: 480px){
+
+          .bonus-main .itemb__block-text ul li {
+              font-size: 0.75rem;
+              line-height: 1.125rem;
+              margin-bottom: 5px
+          }
+            }
+
+.bonus-main .itemb__block-text ul li:before {
+              content: '';
+              content: '';
+              width: 15px;
+              height: 15px;
+              background-color: #5293df;
+              display: block;
+              border-radius: 50%;
+              position: relative;
+              top: 31px;
+              left: -30px
+            }
+
+@media(max-width: 480px){
+
+            .bonus-main .itemb__block-text ul li:before {
+                width: 6px;
+                height: 6px;
+                top: 10px;
+                left: -15px
+            }
+                
+              }
+
+.bonus-main .itemb__img {
+      background-image: url("../src/img/bonus/bonus1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 740px;
+      height: 343px;
+      position: absolute;
+      top: 100px;
+      right: 105px
+    }
+
+@media(max-width: 1200px){
+
+    .bonus-main .itemb__img {
+        position: relative;
+        top: 0;
+        right: 0;
+        left: -15px
+    }
+      }
+
+@media(max-width: 767px){
+
+    .bonus-main .itemb__img {
+        width: 100%
+    }
+      }
+
+@media(max-width: 480px){
+
+    .bonus-main .itemb__img {
+        background-size: contain;
+        background-position-y: 0
+    }
+      }
+
+.bonus-akcija{
+  background-color: #ebf4fd
+
+}
+
+@media(max-width: 1024px) {
+
+.bonus-akcija{
+    padding: 50px 0
+
+}
+  }
+
+@media(max-width: 480px) {
+
+.bonus-akcija{
+    padding: 20px 0;
+    overflow: hidden
+
+}
+  }
+
+.bonus-akcija__container {
+      text-align: center;
+      margin-bottom: 50px
+  }
+
+@media(max-width: 768px){
+
+  .bonus-akcija__container {
+        margin-bottom: 25px
+  }
+      }
+
+.bonus-akcija__title {
+      font-family: "Proxima";
+      font-size: 3rem;
+      font-weight: bold;
+      color: #000000;
+      letter-spacing: 0.1875rem;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      max-width: 840px;
+      margin-top: 100px
+
+
+  }
+
+@media(max-width: 768px){
+
+  .bonus-akcija__title {
+        font-size: 1.25rem
+
+
+  }
+      }
+
+@media(max-width: 480px){
+
+  .bonus-akcija__title {
+        margin-top: 20px
+
+
+  }
+      }
+
+.bonus-akcija__bg{
+    width: 380px;
+    height: 20px;
+    background-color: #87d04c;
+    position: relative;
+    top: -31px;
+    margin: 0 auto;
+    transform: translateX(-25%)
+  }
+
+@media(max-width: 768px){
+
+  .bonus-akcija__bg{
+        width: 140px;
+        height: 9px;
+        top: -12px;
+        transform: translateX(-13%)
+  }
+      }
+
+.bonus-akcija__first {
+  padding-bottom: 50px;
+  display: flex
+}
+
+@media(max-width:768px){
+
+.bonus-akcija__first {
+    flex-wrap: wrap;
+    flex-direction: column
+}
+  }
+
+@media(max-width: 480px){
+
+.bonus-akcija__first {
+    padding-bottom: 25px
+}
+  }
+
+.bonus-akcija__first__item {
+    width: 50%;
+    text-align: center
+  }
+
+@media(max-width:768px){
+
+  .bonus-akcija__first__item {
+      width: 100%;
+      margin-bottom: 15px
+  }
+    }
+
+.bonus-akcija__first__item h3 {
+      color: #1a1a1a;
+      font-family: "Proxima Nova";
+      font-size: 1.6875rem;
+      letter-spacing: 0.1125rem
+    }
+
+@media(max-width: 1024px){
+
+    .bonus-akcija__first__item h3 {
+        font-size: 1.25rem
+    }
+      }
+
+@media(max-width: 480px){
+
+    .bonus-akcija__first__item h3 {
+        font-size: 1rem
+    }
+      }
+
+.bonus-akcija__first__item p {
+      font-family: "Proxima";
+      font-weight: bold;
+      font-size: 1.6875rem;
+      max-width: 450px;
+      margin: 0 auto;
+      color: #1a1a1a
+    }
+
+@media(max-width: 1024px){
+    .bonus-akcija__first__item p {
+        font-size: 1.25rem
+    }
+      }
+
+@media(max-width: 480px){
+    .bonus-akcija__first__item p {
+        font-size: 0.9375rem
+    }
+      }
+
+.bonus-akcija__first__item span {
+      color: #2eafdf;
+    }
+
+.bonus-akcija__first__item a {
+      -webkit-text-decoration-line: none;
+              text-decoration-line: none;
+      color: #1a1a1a;
+      transition: all .3s
+    }
+
+.bonus-akcija__first__item a:hover {
+        color: #2eafdf;
+      }
+
+.bonus-akcija__first__item-img {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto
+    }
+
+@media(max-width: 480px){
+
+    .bonus-akcija__first__item-img {
+        padding-top: 10px
+    }
+      }
+
+.bonus-akcija__first__item-img img {
+        width: 100%;
+      height: 100%;
+      }
+
+.bonus-akcija__two-title {
+    color: #000000;
+    font-family: "Proxima Nova Bold";
+    font-size: 2.25rem;
+    text-align: center;
+    padding-bottom: 50px
+  }
+
+@media(max-width: 480px){
+  .bonus-akcija__two-title {
+      font-size: 0.9375rem;
+      padding-bottom: 0px
+  }
+    }
+
+.bonus-akcija__two-blocks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.bonus-akcija__two-blocks__item {
+      width: 33%;
+      text-align: center;
+      margin-bottom: 30px
+    }
+
+@media(max-width: 1024px){
+
+    .bonus-akcija__two-blocks__item {
+        width: 50%
+    }
+      }
+
+@media(max-width: 767px){
+
+    .bonus-akcija__two-blocks__item {
+        width: 100%
+    }
+      }
+
+@media(max-width: 480px){
+
+    .bonus-akcija__two-blocks__item {
+        margin-bottom: 10px
+    }
+      }
+
+.bonus-akcija__two-blocks__item h4 {
+        color: #1e7e0b;
+        font-family: "Proxima Nova Bold";
+        font-size: 1.5625rem;
+        letter-spacing: 0.1125rem
+        
+      }
+
+@media(max-width: 480px){
+
+      .bonus-akcija__two-blocks__item h4 {
+          font-size: 0.875rem
+        
+      }
+        }
+
+.bonus-akcija__two-blocks__item h3{
+        color: #1a1a1a;
+        font-family: "Proxima Nova";
+        font-size: 1.6875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1125rem;
+        margin: 0;
+      }
+
+.bonus-akcija__two-blocks__item h5 {
+        color: #1a1a1a;
+        font-family: "Proxima";
+        font-size: 1.125rem;
+        letter-spacing: 0.05625rem;
+        margin: 0;
+        line-height: 1.25rem;
+      }
+
+.bonus-akcija__two-blocks__item p{
+        color: #363737;
+        font-family: "Proxima Nova Bold";
+        font-size: 1.5625rem;
+        letter-spacing: 0.1125rem;
+        padding: 0 10px;
+        margin: 5px 0
+      }
+
+@media(max-width: 480px){
+      .bonus-akcija__two-blocks__item p{
+          font-size: 0.75rem
+      }
+        }
+
+.bonus-akcija__two-blocks__item span {
+        color: #2eafdf;
+      }
+
+.bonus-akcija__two-blocks__item a {
+        -webkit-text-decoration-line: none;
+                text-decoration-line: none;
+        color: #1a1a1a;
+        transition: all .3s;
+        font-weight: bold
+      }
+
+.bonus-akcija__two-blocks__item a:hover {
+          color: #2eafdf;
+        }
+
+.galery{
+  overflow: hidden;
+  padding: 50px 0
+
+}
+
+@media(max-width: 1024px) {
+
+.galery{
+    padding: 20px 0
+
+}
+  }
+
+@media(max-width: 480px) {
+
+.galery{
+    padding: 10px 0
+
+}
+  }
+
+.galery__container {
+    text-align: center;
+    margin-bottom: 50px
+}
+
+@media(max-width: 768px){
+
+  .galery__container {
+      margin-bottom: 25px
+}
+    }
+
+.galery__title {
+      font-family: "Proxima";
+      font-size: 3rem;
+      font-weight: bold;
+      color: #403f3f;
+      letter-spacing: 0.1875rem;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      max-width: 840px
+
+
+  }
+
+@media(max-width: 768px){
+
+
+  .galery__title {
+        font-size: 1.25rem
+
+
+  }
+      }
+
+.galery__bg{
+    width: 200px;
+    height: 20px;
+    background-color: #87d04c;
+    position: relative;
+    top: -31px;
+    margin: 0 auto;
+    transform: translateX(-25%)
+  }
+
+@media(max-width: 768px){
+
+  .galery__bg{
+        width: 140px;
+        height: 9px;
+        top: -12px;
+        transform: translateX(-13%)
+  }
+      }
+
 /* ********************   form alert    ***************************************/
 
 .modal-overlay1 {
@@ -5491,6 +6173,160 @@
 .modal-head-text {
   font-family: var(--comforta);
 }
+
+.modal-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  overflow: auto;
+
+}
+
+.modal-form-active {
+    display: flex;
+  }
+
+.modal-form-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #b8b4b4;
+    opacity: .8;
+    cursor: pointer;
+  }
+
+.modal-form form {
+    background: #2eafdf;
+    width: 440px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 30px;
+    padding-top: 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    position: relative; 
+  }
+
+/* @media(max-width: 480px){
+      width: 100%;
+      padding: 40px 20px 30px;
+      border-radius: 0;
+      box-shadow: none;
+    } */
+
+.modal-form form input[type="text"] {
+        width: 100%;
+        height: 70px;
+        border-radius: 45px;
+        border: none;
+        padding: 15px 25px 15px 75px;
+        font-family: "Proxima Nova";
+        font-size: 1.5rem;
+        margin-bottom: 45px;
+        outline: none;
+        letter-spacing: 0.15rem
+    }
+
+@media(max-width: 1023px){
+
+
+    .modal-form form input[type="text"] {
+            height: 60px;
+            font-size: 1.125rem;
+            margin-bottom: 30px
+    }
+        }
+
+@media(max-width: 480px){
+
+
+    .modal-form form input[type="text"] {
+          width: 80%;
+          font-size: 0.8125rem;
+          height: 40px;
+          padding: 5px 25px 5px 30px;
+          margin-bottom: 20px;
+          letter-spacing: 0.1875rem
+    }
+      }
+
+.modal-form form input[type="submit"] {
+
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+        position: absolute;
+    }
+
+.modal-form .header__formbtn {
+    padding: 20px 35px;
+    border-radius: 40px;
+    transition: 1s ease-out;
+    color: white;
+    border: none;
+    font-family: "Proxima";
+    font-weight: bold;
+    letter-spacing: 0.20063rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    display:inline-block;
+    overflow:hidden;
+    /* text-transform: capitalize; */
+    z-index:1;
+    position:relative;
+    background: #1fca16;
+    margin-top: 25px
+   
+  }
+
+@media(max-width: 480px) {
+
+  .modal-form .header__formbtn {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+        width: 200px;
+      height: 40px;
+      padding-top: 13px;
+      margin-top: 10px
+   
+  }
+    }
+
+.modal-form .header__formbtn:before{
+      content:'';
+      position:absolute;
+      top:-30px;
+      left:50%;
+      transform:translate(-50%, -50%) scale(1);
+      display:block;
+      width:50px;
+      height:50px;
+      background: white;
+      border-radius:50px;
+      transition: 0.5s;
+      z-index:-1;
+    }
+
+.modal-form .header__formbtn:hover{
+      box-shadow:0 5px 20px rgba(0,0,0,.5);
+       cursor:pointer;
+       transition-delay: .1s;
+        color: #1fca16;
+        z-index:8
+    }
+
+.modal-form .header__formbtn:hover:before{
+        transform:scale(8.3);
+      }
 
 /* Slider */
 
@@ -9013,6 +9849,10 @@ body, html {
     background-color: var(--white);
 }
 
+input[type=text], input[type=submit], textarea{
+	-webkit-appearance: none;
+}
+
 .container {
     max-width: 1180px;
     margin: 0 auto
@@ -9197,7 +10037,7 @@ body, html {
         }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -9206,4 +10046,34 @@ body, html {
     opacity: .8;
     z-index: 5;
     display: none;
+    cursor: pointer;
 }
+
+input.error {
+ border: 1px solid #ff0000 !important;
+}
+
+label.error {
+ color: #ff0000;
+ font-weight: normal;
+ color: #cc2727;
+font-weight: bold;
+position: relative;
+top: -35px
+}
+
+@media(max-width: 1023px){
+
+label.error {
+        top: -30px
+}
+    }
+
+@media(max-width: 480px){
+
+label.error {
+        font-size: 0.75rem;
+        display: block;
+        top: -15px
+}
+    }

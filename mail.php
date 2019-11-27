@@ -1,10 +1,11 @@
-<?php
+﻿<?php
 
 // require ('../phpmailer/PHPMailerAutoload.php');
 
 $result = array(
-  'name' => $_POST["name"],
-  'tel' => $_POST['phone-details']
+  'name' => $_POST['name'],
+  'phone' => $_POST['phone'],
+  'email' => $_POST['email'],
 );
 echo json_encode($result);
 

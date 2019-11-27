@@ -17,7 +17,9 @@
 
 </head>
 <body>
+  
   <div class="overlay"></div>
+  <!--  modal menu -->
   <div class="modal">
     <div class="modal__close">
       <span></span>
@@ -55,6 +57,23 @@
       </li>
     </ul>
   </div>
+  <!--  /modal window -->
+
+  <!--  modal form -->
+  <div class="modal-form">
+    <div class="modal-form-overlay"></div>
+    <form action="" class="header__form modal__form-validation" >
+      <input type="submit">
+      <input type="text" name="name" placeholder="Ваше Имя" required>
+      <input type="text" name="phone" placeholder="Телефон" required>
+      <input type="text" name="email" placeholder="E-mail">
+      <div  class="header__formbtn" data-type="pos_aware">
+        отправить заявку
+      </div>
+    </form>
+  </div>
+  <!--  /modal form -->
+
 <section class="topline">
   <div class="topline__bg">
       <div class="container">
@@ -113,15 +132,14 @@
       </div>
 
       <div class="header__right">
-        <form action="" class="header__form">
+        <form action="" class="header__form header__form-validation" >
           <input type="submit">
-          <input type="text" placeholder="Ваше Имя" required>
-          <input type="text" placeholder="Телефон" required>
-          <input type="text" placeholder="E-mail" required>
+          <input type="text" name="name" placeholder="Ваше Имя" required>
+          <input type="text" name="phone" placeholder="Телефон" required>
+          <input type="text" name="email" placeholder="E-mail">
           <div  class="header__formbtn" data-type="pos_aware">
             отправить заявку
           </div>
-          
         </form>
       </div>
     </div>
@@ -200,7 +218,7 @@
           </div>
           <div class="akcija__btn">
             <div class="akcija__link akcija__link-green">Забронировать</div>
-            <div class="akcija__link akcija__link-blue">ВСЕ АКЦИИ</div>
+            <div class="akcija__link akcija__link-blue"><a href="bonus.html">ВСЕ АКЦИИ</a></div>
           </div>
         </div>
     </div>
@@ -439,7 +457,7 @@
       <div class="footer__items">
         <div class="footer__top-item">
             <div class="footer__top-disc">Минск, Карла Либкнехта 129</div>
-            <div class="footer__top-disc">e-mail: <a href="mailto:OOO.VILLORY@YANDEX.BY" target="_blank">ooo.mildegold@yandex.by</a></div>
+            <div class="footer__top-disc">e-mail: <a href="mailto:OOO.VILLORY@YANDEX.BY" target="_blank">OOO.VILLORY@YANDEX.BY</a></div>
             <div class="footer__top-disc"><a href="tel:375333889156" target="_blank">+375 (33) 388 91 56</a></div>
             <div class="footer__top-disc"><a href="tel:375259362466" target="_blank">+375 (25) 936 24 66</a></div>
         </div>
@@ -457,13 +475,13 @@
         </div>
         <div class="footer__top-item">
             <div class="footer__top-disc"><a href="ecpv.html">ЕЦПВ</a></div>
-            <div class="footer__top-disc"><a href="vakansija.htm">ВАКАНСИИ</a></div>
+            <div class="footer__top-disc"><a href="vakansija.html">ВАКАНСИИ</a></div>
             <div class="footer__top-disc"><a href="#friend">ПРИЛОЖЕНИЯ</a></div>
             <div class="footer__top-disc"><a href="#otziv">ОТЗЫВЫ</a></div>
         </div>
         <div class="footer__top-item">
             <div class="footer__top-disc"><a href="about.html">О НАС</a></div>
-            <div class="footer__top-disc"><a href="gallery.html">ГАЛЕРЕЯ</a></div>
+            <div class="footer__top-disc"><a href="galery.html">ГАЛЕРЕЯ</a></div>
             <div class="footer__top-disc"><a href="bonus.html">БОНУСЫ</a></div>
             <div class="footer__top-disc"><a href="blog.html">БЛОГ</a></div>
         </div>
@@ -488,8 +506,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <script src="js/app.js"></script>
-
 </body>
 </html> 
 

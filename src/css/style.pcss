@@ -21,8 +21,11 @@
 @import "vakan-section.css";
 @import "about-section.css";
 @import "blog-section.css";
+@import "section-bonus.css";
+@import "galery-section.css";
 
 @import "modal.css";
+@import "modal-form.css";
 @import "slick.css";
 @import "animate.css";
 @import "animate-custom.css";
@@ -66,6 +69,10 @@ body, html {
     color: var(--black);
     background-color: var(--white);
 }
+
+input[type=text], input[type=submit], textarea{
+	-webkit-appearance: none;
+} 
 
 .container {
     max-width: 1180px;
@@ -230,7 +237,7 @@ body, html {
     }
 }
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -239,4 +246,26 @@ body, html {
     opacity: .8;
     z-index: 5;
     display: none;
+    cursor: pointer;
+}
+
+
+input.error {
+ border: 1px solid #ff0000 !important;
+}
+label.error {
+ color: #ff0000;
+ font-weight: normal;
+ color: #cc2727;
+font-weight: bold;
+position: relative;
+top: -35px;
+    @media(max-width: 1023px){
+        top: -30px;
+    }
+    @media(max-width: 480px){
+        font-size: 12px;
+        display: block;
+        top: -15px;
+    }
 }

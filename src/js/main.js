@@ -1,6 +1,9 @@
-// window.jQuery = require('jquery');
+﻿// window.jQuery = require('jquery');
 // var $ = require('jquery');
 // var jQuery = require('jquery');
+// require('./jquery.validate.js');
+
+
 
 (function($) { 
   $.fn.animated = function(inEffect, outEffect) { 
@@ -33,8 +36,6 @@
 
  //animate
 $(function(){
-
-
   // <-------------------------- topline ---------------------->
   $(".topline__row-animate").animated("fadeInDown", "fadeOutUp");
   $(".topline__row-2").animated("fadeInDown", "fadeOutUp");
@@ -86,8 +87,8 @@ $(function(){
    // <-------------------------- /otziv ---------------------->
    $(".otziv__container").animated("fadeInUp", "fadeOutDown");
 
-   $(".card").animated("fadeInLeft", "fadeOutLeft");
-   $(".otziv__block-caption").animated("fadeInRight", "fadeOutRight");
+  //  $(".card").animated("fadeInLeft", "fadeOutLeft");
+  //  $(".otziv__block-caption").animated("fadeInRight", "fadeOutRight");
 
     // <-------------------------- /otziv ---------------------->
 
@@ -150,8 +151,6 @@ $(".block3-requied-list__item").each(function(){
 // <-------------------------- /section-135__container ---------------------->
 
 })
-
-
 
 $(function(){
   var $page = $('html, body');
@@ -369,8 +368,13 @@ $(function(){
 
 // btn click in form
 $(function(){
-  $('.header__formbtn').on('click', function() {
-    $('input[type="submit"]').click();
+  $('.header__form-validation .header__formbtn').on('click', function() {
+    $('.header__form-validation input[type="submit"]').click();
+  }) 
+})
+$(function(){
+  $('.modal__form-validation .header__formbtn').on('click', function() {
+    $('.modal__form-validation input[type="submit"]').click();
   }) 
 })
 
@@ -561,13 +565,22 @@ $(function() {
 
 
 //btn burger
-
 $(function(){
+ 
 
   $('.topline__burger-img').click(Modal)
 
-  $('.overlay').click(Modal); 
- 
+  // $('.overlay').click(function(){
+  //   if ( $('.modal-form-active').length > 0 ) {
+  //     $('.modal-form').removeClass('modal-form-active');
+  //     $('body').css({"overflow":"visible"});
+  //     $('.overlay').hide();
+      
+  //   } else {
+  //     Modal();
+  //   }
+  // }); 
+  $('.overlay').click(Modal);
   $('.modal__close span').click(Modal);
 
 
@@ -585,8 +598,172 @@ $(function(){
      $('.overlay').show();
     } 
   }
+})
 
 
+
+
+$(function(){
+
+  
+  $('.modal__form-validation').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      phone: {
+        required: true,
+        number: true,
+        minlength: 9,
+        maxlength: 9
+      },
+      email: {
+        email: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Поле 'Имя' обязательно к заполнению",
+        minlength: "Введите не менее 2-х символов в поле 'Имя'"
+      },
+      phone: {
+        required: "Поле 'Телефон' обязательно к заполнению",
+        number: "Неверный номер",
+        minlength: "Номер состоит из 9 чисел",
+        maxlength: "Номер состоит из 9 чисел",
+      },
+      email: {
+        email: "Необходим формат адреса email" 
+      }
+    },
+    submitHandler: function(form) {
+      
+      sendAjaxForm(form, 'http://localhost:3000/mail.php');
+
+      function sendAjaxForm(ajax_form, url) {
+          $.ajax({
+              url:     url, //url страницы (send.php)
+              type:     "POST", //метод отправки
+              dataType: "html",
+              data: $(ajax_form).serialize(),  // Сеарилизуем объект
+              beforeSend: function(data) { // событие до отправки
+                // $('.footer_btn').attr('disabled', 'disabled');
+                console.log(data);
+                $(form).trigger("reset");					
+              },
+              success: function(response) { //Данные отправлены успешно
+                  console.log(response);
+                  result = $.parseJSON(response);
+                  console.log(result);
+                  $(form).trigger("reset");
+
+                  // $('.modal-head-name').html("Спасибо!");
+                  // $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+                  // $(".modal-overlay1").fadeIn();
+                  // $(".modal1").fadeIn();
+                  // $(".modal1").css({"transform" : "translateY(0%)"});
+                  // $("body").css({"overflow":"hidden"});
+                  // $('.workim__btn').removeAttr('disabled');
+              }
+          });
+      }
+    }
+  });
+
+  $('.header__form-validation').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      phone: {
+        required: true,
+        number: true,
+        minlength: 9,
+        maxlength: 9
+      },
+      email: {
+        email: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Поле 'Имя' обязательно к заполнению",
+        minlength: "Введите не менее 2-х символов в поле 'Имя'"
+      },
+      phone: {
+        required: "Поле 'Телефон' обязательно к заполнению",
+        number: "Неверный номер",
+        minlength: "Номер состоит из 9 чисел",
+        maxlength: "Номер состоит из 9 чисел",
+      },
+      email: {
+        email: "Необходим формат адреса email" 
+      }
+    },
+    submitHandler: function(form) {
+      
+      sendAjaxForm(form, 'http://localhost:3000/mail.php');
+
+      function sendAjaxForm(ajax_form, url) {
+          $.ajax({
+              url:     url, //url страницы (send.php)
+              type:     "POST", //метод отправки
+              dataType: "html",
+              data: $(ajax_form).serialize(),  // Сеарилизуем объект
+              beforeSend: function(data) { // событие до отправки
+                // $('.footer_btn').attr('disabled', 'disabled');
+                console.log(data);
+                $(form).trigger("reset");					
+              },
+              success: function(response) { //Данные отправлены успешно
+                  console.log(response);
+                  result = $.parseJSON(response);
+                  console.log(result);
+                  $(form).trigger("reset");
+
+                  // $('.modal-head-name').html("Спасибо!");
+                  // $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+                  // $(".modal-overlay1").fadeIn();
+                  // $(".modal1").fadeIn();
+                  // $(".modal1").css({"transform" : "translateY(0%)"});
+                  // $("body").css({"overflow":"hidden"});
+                  // $('.workim__btn').removeAttr('disabled');
+              }
+          });
+      }
+    }
+  });
+
+  // $('.header__form').submit(function(e){
+  //   e.preventDefault();
+  //   alert("Ok")
+  // })
+})
+
+$(function(){
+  $('.akcija__link-green').click(function(){
+    $('.modal-form').addClass('modal-form-active');
+    $('body').css({"overflow":"hidden"});
+    //$('.modal-form-overlay').show();
+  })
+  $('.modal-form-overlay').click(function(){
+    $('body').css({"overflow":"visible"});
+    $('.modal-form').removeClass('modal-form-active');
+  })
+})
+
+$(function(){
+  $('.block3-btn__btn-blue').click(function(){
+    $('.modal-form').addClass('modal-form-active');
+    $('body').css({"overflow":"hidden"});
+  })
+
+  $('.block3-btn__btn-green').click(function(){
+    $('.modal-form').addClass('modal-form-active');
+    $('body').css({"overflow":"hidden"});
+  })
 
 })
 

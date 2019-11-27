@@ -1,0 +1,448 @@
+.bonus{
+
+
+  @media(max-width: 480px) {
+
+    overflow: hidden;
+  }
+
+  &__container {
+      text-align: center;
+      margin-bottom: 50px;
+
+      @media(max-width: 768px){
+        margin-bottom: 25px;
+      }
+  }
+
+  &__title {
+      font-family: "Proxima";
+      font-size: 48px;
+      font-weight: bold;
+      color: #403f3f;
+      letter-spacing: 3px;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      max-width: 840px;
+
+      @media(max-width: 768px){
+        font-size: 20px;
+      }
+
+
+  }
+
+  &__bg{
+    width: 380px;
+    height: 20px;
+    background-color: #87d04c;
+    position: relative;
+    top: -31px;
+    margin: 0 auto;
+    transform: translateX(-25%);
+
+      @media(max-width: 768px){
+        width: 140px;
+        height: 9px;
+        top: -12px;
+        transform: translateX(-13%)
+      }
+  }
+
+}
+
+.bonus-main {
+  overflow: hidden;
+  &__title {
+    font-family: "Proxima Nova";
+    font-size: 36px;
+    color: #161616;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 100px;
+
+    @media(max-width: 480px){
+      font-size: 16px;
+      letter-spacing: 0.8px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .itemb {
+    display: flex;
+    margin-bottom: 100px;
+
+    @media(max-width: 1200px){
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+
+    @media(max-width: 480px){
+      margin-bottom: 50px;
+    }
+    @media(max-width: 420px){
+      margin-bottom: 0px;
+    }
+
+    &-revers {
+      flex-direction: row-reverse;
+
+      @media(max-width: 1200px){
+        flex-direction: column-reverse;
+      }
+
+      .itemb__img {
+        background-image: url("../src/img/bonus/bonus2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        right: inherit;
+        width: 879px;
+        height: 391px;
+
+        @media(max-width: 1200px){
+          margin-left: auto;
+          transform: translateX(72px);
+        }
+
+        @media(max-width: 480px){
+          transform: translateX(-165px);
+          height: 200px;
+        }
+      }
+    }
+
+    &__block {
+      width: 60%;
+
+      &-img {
+        width: 40%;
+        position: relative;
+
+        @media(max-width: 480px){
+          height: 200px;
+        }
+        
+      }
+
+      @media(max-width: 1200px){
+        width: 100%;
+      }
+
+
+
+      &-text {
+        ul {
+          padding: 0;
+          margin: 0;
+
+          @media(max-width: 1200px){
+            padding-left: 50px;
+          }
+
+          @media(max-width: 480px){
+            padding-left: 25px;
+          }
+
+          li {
+            color: #4a4a49;
+            font-family: "Proxima Nova Bold";
+            font-size: 36px;
+            letter-spacing: 1.8px;
+            line-height: 45px;
+            list-style-type: none;
+
+            @media(max-width: 480px){
+              font-size: 12px;
+              line-height: 18px;
+              margin-bottom: 5px;
+            }
+
+            &:before {
+              content: '';
+              content: '';
+              width: 15px;
+              height: 15px;
+              background-color: #5293df;
+              display: block;
+              border-radius: 50%;
+              position: relative;
+              top: 31px;
+              left: -30px;
+
+              @media(max-width: 480px){
+                width: 6px;
+                height: 6px;
+                top: 10px;
+                left: -15px;
+                
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__img {
+      background-image: url("../src/img/bonus/bonus1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 740px;
+      height: 343px;
+      position: absolute;
+      top: 100px;
+      right: 105px;
+
+      @media(max-width: 1200px){
+        position: relative;
+        top: 0;
+        right: 0;
+        left: -15px;
+      }
+      @media(max-width: 767px){
+        width: 100%;
+      }
+      @media(max-width: 480px){
+        background-size: contain;
+        background-position-y: 0;
+      }
+    }
+  }
+}
+
+ 
+
+.bonus-akcija{
+  background-color: #ebf4fd;
+    
+  @media(max-width: 1024px) {
+    padding: 50px 0;
+  }
+
+  @media(max-width: 480px) {
+    padding: 20px 0;
+    overflow: hidden;
+  }
+
+  &__container {
+      text-align: center;
+      margin-bottom: 50px;
+
+      @media(max-width: 768px){
+        margin-bottom: 25px;
+      }
+  }
+
+  &__title {
+      font-family: "Proxima";
+      font-size: 48px;
+      font-weight: bold;
+      color: #000000;
+      letter-spacing: 3px;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      max-width: 840px;
+      margin-top: 100px;
+
+      @media(max-width: 768px){
+        font-size: 20px;
+      }
+
+      @media(max-width: 480px){
+        margin-top: 20px;
+      }
+
+
+  }
+
+  &__bg{
+    width: 380px;
+    height: 20px;
+    background-color: #87d04c;
+    position: relative;
+    top: -31px;
+    margin: 0 auto;
+    transform: translateX(-25%);
+
+      @media(max-width: 768px){
+        width: 140px;
+        height: 9px;
+        top: -12px;
+        transform: translateX(-13%)
+      }
+  }
+
+}
+
+.bonus-akcija__first {
+  padding-bottom: 50px;
+  display: flex;
+
+  @media(max-width:768px){
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  @media(max-width: 480px){
+    padding-bottom: 25px;
+  }
+
+  &__item {
+    width: 50%;
+    text-align: center;
+
+    @media(max-width:768px){
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: #1a1a1a;
+      font-family: "Proxima Nova";
+      font-size: 27px;
+      letter-spacing: 1.8px;
+
+      @media(max-width: 1024px){
+        font-size: 20px;
+      }
+
+      @media(max-width: 480px){
+        font-size: 16px;
+      }
+    }
+    p {
+      font-family: "Proxima";
+      font-weight: bold;
+      font-size: 27px;
+      max-width: 450px;
+      margin: 0 auto;
+      color: #1a1a1a;
+
+      @media(max-width: 1024px){
+        font-size: 20px;
+      }
+      @media(max-width: 480px){
+        font-size: 15px;
+      }
+    }
+
+    span {
+      color: #2eafdf;
+    }
+
+    a {
+      text-decoration-line: none;
+      color: #1a1a1a;
+      transition: all .3s;
+
+      &:hover {
+        color: #2eafdf;
+      }
+    }
+
+    &-img {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+
+      @media(max-width: 480px){
+        padding-top: 10px;
+      }
+      img {
+        width: 100%;
+      height: 100%;
+      }
+    }
+  }
+}
+
+.bonus-akcija__two {
+  &-title {
+    color: #000000;
+    font-family: "Proxima Nova Bold";
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+
+    @media(max-width: 480px){
+      font-size: 15px;
+      padding-bottom: 0px;
+    }
+  }
+  &-blocks {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 33%;
+      text-align: center;
+      margin-bottom: 30px;
+
+      @media(max-width: 1024px){
+        width: 50%;
+      }
+      @media(max-width: 767px){
+        width: 100%;
+      }
+      @media(max-width: 480px){
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        color: #1e7e0b;
+        font-family: "Proxima Nova Bold";
+        font-size: 25px;
+        letter-spacing: 1.8px;
+
+        @media(max-width: 480px){
+          font-size: 14px;
+        }
+        
+      }
+      h3{
+        color: #1a1a1a;
+        font-family: "Proxima Nova";
+        font-size: 27px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        margin: 0;
+      }
+      h5 {
+        color: #1a1a1a;
+        font-family: "Proxima";
+        font-size: 18px;
+        letter-spacing: 0.9px;
+        margin: 0;
+        line-height: 20px;
+      }
+      p{
+        color: #363737;
+        font-family: "Proxima Nova Bold";
+        font-size: 25px;
+        letter-spacing: 1.8px;
+        padding: 0 10px;
+        margin: 5px 0;
+
+        @media(max-width: 480px){
+          font-size: 12px;
+        }
+      }
+      span {
+        color: #2eafdf;
+      }
+      a {
+        text-decoration-line: none;
+        color: #1a1a1a;
+        transition: all .3s;
+        font-weight: bold;
+  
+        &:hover {
+          color: #2eafdf;
+        }
+      }
+    }
+  }
+}

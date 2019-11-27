@@ -130,7 +130,7 @@
           width: 321px;
           height: 75px;
           text-align: center;
-          padding-top: 20px;
+          padding-top: 22px;
           color: #ffffff;
           font-family: "Proxima";
           font-size: 20px;
@@ -199,7 +199,7 @@
           width: 321px;
           height: 75px;
           text-align: center;
-          padding-top: 20px;
+          padding-top: 22px;
 
           color: #ffffff;
           font-family: "Proxima";
@@ -248,9 +248,27 @@
               transition-delay: .1s;
               color: #2eafdf;
               z-index:8;
+              
+            a {
+              color: #2eafdf;
+            }
+
             &:before{
               -webkit-transform:scale(8.3);
               transform:scale(8.3);
+            }
+          }
+          a {
+            font-family: "Proxima";
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--white);
+            text-decoration-line: none;
+            letter-spacing: 2.25px;
+  
+            @media(max-width: 480px){
+              font-size: 12px;
             }
           }
         }
