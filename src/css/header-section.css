@@ -200,6 +200,7 @@
           text-transform: uppercase;
           text-decoration-line: none;
           transition: all .3s;
+          -webkit-appearance: none;
 
           @media(max-width: 1023px){
               font-size: 18px;
@@ -237,6 +238,7 @@
       letter-spacing: 3px;
       cursor: pointer;
       margin-left: 50px;
+      -webkit-appearance: none;
 
       @media(max-width: 480px) {
         line-height: 30px;
@@ -426,6 +428,7 @@
   position:relative;
   background: #1fca16;
   margin-top: 25px;
+  -webkit-appearance: none;
 
   @media(max-width: 480px) {
       font-size: 12px;

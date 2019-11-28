@@ -136,14 +136,16 @@
 
   &__disc {
     color: #212020;
-    font-family: "Proxima";
+    font-family: "Proxima Nova Bold";
     font-weight: bold;
     font-size: 32px;
     letter-spacing: 1.6px;
     transition: all 1s;
+    
 
     @media(max-width: 480px){
       font-size: 12px;
+      letter-spacing: 0.6px;
     }
   }
 

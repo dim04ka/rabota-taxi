@@ -613,6 +613,7 @@
       letter-spacing: 0.1875rem;
       cursor: pointer;
       margin-left: 50px;
+      -webkit-appearance: none;
   }
 
 /* background-color: #2eafdf;
@@ -640,7 +641,8 @@
           text-transform: uppercase;
           -webkit-text-decoration-line: none;
                   text-decoration-line: none;
-          transition: all .3s
+          transition: all .3s;
+          -webkit-appearance: none
 
 
       }
@@ -891,7 +893,8 @@
   z-index:1;
   position:relative;
   background: #1fca16;
-  margin-top: 25px
+  margin-top: 25px;
+  -webkit-appearance: none
 }
 
 @media(max-width: 480px) {
@@ -1032,6 +1035,13 @@
               
           }
 
+@media(max-width: 480px) {
+
+      .what__wrapper-item {
+              width: 80%
+      }
+          }
+
 .what__wrapper-icon {
           margin: 0 auto
 
@@ -1084,7 +1094,6 @@
           letter-spacing: 0.09375rem;
           text-align: center;
           padding-top: 30px
-
       }
 
 @media(max-width: 768px){
@@ -1092,9 +1101,22 @@
       .what__wrapper-disc {
               font-size: 0.875rem;
               padding-top: 0px
-
       }
           }
+
+@media(max-width: 480px){
+
+      .what__wrapper-disc {
+                letter-spacing: 0.04375rem
+      }
+          }
+
+@media(max-width: 480px){
+
+          .what__wrapper-disc-mrt {
+                margin-top: -20px
+          }
+            }
 
 .offer{
       
@@ -3455,7 +3477,8 @@
       color: #1d1d1d;
       font-family: "Proxima";
       font-weight: bold;
-      font-size: 1.5rem
+      font-size: 1.5rem;
+      width: 80%
     }
 
 @media(max-width: 480px){
@@ -3603,7 +3626,8 @@
       overflow:hidden;
       text-transform:capitalize;
       z-index:1;
-      position:relative
+      position:relative;
+      -webkit-appearance: none
     }
 
 @media(max-width: 480px) {
@@ -4183,7 +4207,7 @@
 
 .block5__disc {
     color: #212020;
-    font-family: "Proxima";
+    font-family: "Proxima Nova Bold";
     font-weight: bold;
     font-size: 2rem;
     letter-spacing: 0.1rem;
@@ -4193,7 +4217,8 @@
 @media(max-width: 480px){
 
   .block5__disc {
-      font-size: 0.75rem
+      font-size: 0.75rem;
+      letter-spacing: 0.0375rem
   }
     }
 

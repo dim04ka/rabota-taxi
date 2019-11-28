@@ -70,6 +70,9 @@
               width: 70%;
               
           }
+          @media(max-width: 480px) {
+              width: 80%;
+          }
       }
 
       &-icon {
@@ -126,6 +129,15 @@
               padding-top: 0px;
           }
 
+          @media(max-width: 480px){
+                letter-spacing: 0.7px;
+          }
+
+          &-mrt {
+            @media(max-width: 480px){
+                margin-top: -20px;
+            }
+          }
       }
   }
 
