@@ -79,7 +79,7 @@ $(function(){
    $(".work__container").animated("fadeInUp", "fadeOutDown");
   
     $(".work__card").each(function(){
-      $(this).animated("flipInY", "flipOutY");
+      $(this).animated("flipInX", "fadeOutRight");
     })
 
   // <-------------------------- /work ---------------------->
@@ -153,12 +153,25 @@ $(".block3-requied-list__item").each(function(){
 })
 
 $(function(){
-  var $page = $('html, body');
+  let $page = $('html, body');
+  let $modal = document.querySelector('.modal');
+
   $('a[href*="#"]').click(function() {
-      $page.animate({
+    if ( $modal.classList.contains('modal-active')) {
+      $('.topline__burger-img').removeClass('topline__burger-img-active')
+      $('.modal').removeClass('modal-active');
+      $('.overlay').hide();
+          $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
+        $('body').css('overflow','visible');
+        
+    } else {
+        $page.animate({
           scrollTop: $($.attr(this, 'href')).offset().top
       }, 400);
       return false;
+     }
   });
 })
 
@@ -485,15 +498,15 @@ $(function(){
 
 
  //плавный скролл к тегу
-$(function(){
-  var $page = $('html, body');
-  $('a[href*="#"]').click(function() {
-      $page.animate({
-          scrollTop: $($.attr(this, 'href')).offset().top
-      }, 400);
-      return false;
-  });
-})
+// $(function(){
+//   var $page = $('html, body');
+//   $('a[href*="#"]').click(function() {
+//       $page.animate({
+//           scrollTop: $($.attr(this, 'href')).offset().top
+//       }, 400);
+//       return false;
+//   });
+// })
 
 //carusel friend
 $(function() {
@@ -722,13 +735,14 @@ $(function(){
                   result = $.parseJSON(response);
                   console.log(result);
                   $(form).trigger("reset");
+                  alert(1);
 
-                  // $('.modal-head-name').html("Спасибо!");
-                  // $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
-                  // $(".modal-overlay1").fadeIn();
-                  // $(".modal1").fadeIn();
-                  // $(".modal1").css({"transform" : "translateY(0%)"});
-                  // $("body").css({"overflow":"hidden"});
+                  $('.modal-head-name').html("Спасибо!");
+                  $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+                  $(".modal-overlay1").fadeIn();
+                  $(".modal1").fadeIn();
+                  $(".modal1").css({"transform" : "translateY(0%)"});
+                  $("body").css({"overflow":"hidden"});
                   // $('.workim__btn').removeAttr('disabled');
               }
           });

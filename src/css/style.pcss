@@ -1,4 +1,6 @@
 
+@import "normalize.css";
+
 @import "header.css";
 @import "header-section.css";
 @import "what.css";
@@ -59,6 +61,18 @@
     outline: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+@media(min-width: 769px){
+    ::-webkit-scrollbar-thumb {
+    background : #2eafdf;
+    border-radius: 10px;
+    }
+}
+
+
 body, html {
     margin: 0;
     padding: 0;
@@ -118,7 +132,7 @@ input[type=text], input[type=submit], textarea{
 
 .modal {
     position: absolute;
-    height: 100vh;
+    /* height: 100vh; */
     background: #D1CAB3;
     z-index: 10;
     width: 210px;
@@ -127,6 +141,8 @@ input[type=text], input[type=submit], textarea{
     transform: translateX(-1495px);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: all .3s;
+    height: 100%;
+    
 
     @media(max-width: 1200px){
         width: 100%;
@@ -210,7 +226,10 @@ input[type=text], input[type=submit], textarea{
         list-style-type: none;
         padding: 0;
         margin: 0;
-        padding-top: 160px;
+        overflow-y: auto;
+        height: 100%;
+        padding: 50px 0;
+
 
         @media(max-width: 1200px){
             padding-top: 70px;
