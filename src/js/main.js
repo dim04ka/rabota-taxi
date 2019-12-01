@@ -79,7 +79,7 @@ $(function(){
    $(".work__container").animated("fadeInUp", "fadeOutDown");
   
     $(".work__card").each(function(){
-      $(this).animated("flipInX", "fadeOutRight");
+      $(this).animated("fadeInUp", "fadeOutDown");
     })
 
   // <-------------------------- /work ---------------------->
