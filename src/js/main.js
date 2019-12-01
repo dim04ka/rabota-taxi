@@ -381,6 +381,11 @@ $(function(){
     $('.modal__form-validation input[type="submit"]').click();
   }) 
 })
+$(function(){
+  $('.reviews__form-validation .header__formbtn').on('click', function() {
+    $('.reviews__form-validation input[type="submit"]').click();
+  }) 
+})
 
 //image photo show
 $(function(){
@@ -676,6 +681,64 @@ $(function(){
     }
   });
 
+  $('.reviews__form-validation').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      text: {
+        required: true,
+        minlength: 4,
+
+      }
+    },
+    messages: {
+      name: {
+        required: "Поле 'Имя' обязательно к заполнению",
+        minlength: "Введите не менее 2-х символов в поле 'Имя'"
+      },
+      text: {
+        required: "Поле обязательно к заполнению",
+        minlength: "",
+      }
+    },
+    submitHandler: function(form) {
+      
+      sendAjaxForm(form, 'reviews.php');
+
+      function sendAjaxForm(ajax_form, url) {
+          $.ajax({
+              url:     url, //url страницы (send.php)
+              type:     "POST", //метод отправки
+              dataType: "html",
+              data: $(ajax_form).serialize(),  // Сеарилизуем объект
+              beforeSend: function(data) { // событие до отправки
+                // $('.footer_btn').attr('disabled', 'disabled');
+                //console.log(data);
+                //$(form).trigger("reset");					
+              },
+              success: function(response) { //Данные отправлены успешно
+                  
+                  result = $.parseJSON(response);
+          
+                  $(form).trigger("reset");
+
+                  $('.modal-form-reviews').removeClass('modal-form-reviews-active');
+                  $('.modal-head-name').html("Спасибо!");
+                  $('.modal-head-price').html("Ваш отзыв очень важен для нас");
+                  $(".modal-overlay1").fadeIn();
+                  $(".modal1").fadeIn();
+                  $(".modal1").css({"transform" : "translateY(0%)"});
+                  $("body").css({"overflow":"hidden"});
+                  $('.modal-form').removeClass('modal-form-active');
+              }
+          });
+      }
+    }
+  });
+
+
   $('.header__form-validation').validate({
     rules: {
       name: {
@@ -768,6 +831,21 @@ $(function(){
     $('.modal-form').removeClass('modal-form-active');
   })
 })
+
+//открытие/картытие модального окна отзывы
+$(function(){
+  $('.otziv__block__link').click(function(){
+  
+     $('.modal-form-reviews').addClass('modal-form-reviews-active');
+     $('body').css({"overflow":"hidden"});
+   
+  })
+  $('.modal-form-overlay').click(function(){
+    $('body').css({"overflow":"visible"});
+    $('.modal-form-reviews').removeClass('modal-form-reviews-active');
+  })
+})
+
 
 $(function(){
   $('.block3-btn__btn-blue').click(function(){

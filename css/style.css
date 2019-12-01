@@ -6948,6 +6948,168 @@ template {
         transform:scale(8.3);
       }
 
+.modal-form-reviews {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  z-index: 100;
+  overflow: auto;
+
+}
+
+.modal-form-reviews-active {
+    display: -webkit-box;
+    display: flex;
+  }
+
+.modal-form-reviews-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #b8b4b4;
+    opacity: .8;
+    cursor: pointer;
+  }
+
+.modal-form-reviews form {
+    background: #2eafdf;
+    width: 440px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 30px;
+    padding-top: 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    position: relative; 
+  }
+
+/* @media(max-width: 480px){
+      width: 100%;
+      padding: 40px 20px 30px;
+      border-radius: 0;
+      box-shadow: none;
+    } */
+
+.modal-form-reviews form input[type="text"] {
+        width: 100%;
+        height: 70px;
+        border-radius: 45px;
+        border: none;
+        padding: 15px 25px 15px 75px;
+        font-family: "Proxima Nova";
+        font-size: 1.5rem;
+        margin-bottom: 45px;
+        outline: none;
+        letter-spacing: 0.15rem
+    }
+
+@media(max-width: 1023px){
+
+
+    .modal-form-reviews form input[type="text"] {
+            height: 60px;
+            font-size: 1.125rem;
+            margin-bottom: 30px
+    }
+        }
+
+@media(max-width: 480px){
+
+
+    .modal-form-reviews form input[type="text"] {
+          width: 80%;
+          font-size: 0.8125rem;
+          height: 40px;
+          padding: 5px 25px 5px 30px;
+          margin-bottom: 20px;
+          letter-spacing: 0.1875rem
+    }
+      }
+
+.modal-form-reviews form input[type="submit"] {
+
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+        position: absolute;
+    }
+
+.modal-form-reviews .header__formbtn {
+    padding: 20px 35px;
+    border-radius: 40px;
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out;
+    color: white;
+    border: none;
+    font-family: "Proxima";
+    font-weight: bold;
+    letter-spacing: 0.20063rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    display:inline-block;
+    overflow:hidden;
+    /* text-transform: capitalize; */
+    z-index:1;
+    position:relative;
+    background: #1fca16;
+    margin-top: 25px
+   
+  }
+
+@media(max-width: 480px) {
+
+  .modal-form-reviews .header__formbtn {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+        width: auto;
+      height: 40px;
+      padding-top: 13px;
+      margin-top: 10px
+   
+  }
+    }
+
+.modal-form-reviews .header__formbtn:before{
+      content:'';
+      position:absolute;
+      top:-30px;
+      left:50%;
+      -webkit-transform:translate(-50%, -50%) scale(1);
+      transform:translate(-50%, -50%) scale(1);
+      display:block;
+      width:50px;
+      height:50px;
+      background: white;
+      border-radius:50px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      z-index:-1;
+    }
+
+.modal-form-reviews .header__formbtn:hover{
+      box-shadow:0 5px 20px rgba(0,0,0,.5);
+       cursor:pointer;
+       -webkit-transition-delay: .1s;
+        transition-delay: .1s;
+        color: #1fca16;
+        z-index:8
+    }
+
+.modal-form-reviews .header__formbtn:hover:before{
+        -webkit-transform:scale(8.3);
+        transform:scale(8.3);
+      }
+
 /* Slider */
 
 .slick-slider
