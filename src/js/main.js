@@ -222,47 +222,38 @@ $(function(){
   
 	
 	//send mail
-	$( document ).ready(function() {
-		$(".footer-form").submit(function(e){
-				e.preventDefault();
-				sendAjaxForm('.footer-form', 'http://localhost:3000/mail.php');
+	// $( document ).ready(function() {
+	// 	$(".footer-form").submit(function(e){
+	// 			e.preventDefault();
+	// 			sendAjaxForm('.footer-form', 'http://localhost:3000/mail.php');
 
-				function sendAjaxForm(ajax_form, url) {
-						$.ajax({
-								url:     url, //url страницы (send.php)
-								type:     "POST", //метод отправки
-								dataType: "html",
-								data: $(ajax_form).serialize(),  // Сеарилизуем объект
-								beforeSend: function(data) { // событие до отправки
-									$('.footer_btn').attr('disabled', 'disabled');						
-								},
-								success: function(response) { //Данные отправлены успешно
-										console.log(response);
-										result = $.parseJSON(response);
-										console.log(result);
-										$(".footer-form").trigger("reset");
+	// 			function sendAjaxForm(ajax_form, url) {
+	// 					$.ajax({
+	// 							url:     url, //url страницы (send.php)
+	// 							type:     "POST", //метод отправки
+	// 							dataType: "html",
+	// 							data: $(ajax_form).serialize(),  // Сеарилизуем объект
+	// 							beforeSend: function(data) { // событие до отправки
+	// 								$('.footer_btn').attr('disabled', 'disabled');						
+	// 							},
+	// 							success: function(response) { //Данные отправлены успешно
+	// 									console.log(response);
+	// 									result = $.parseJSON(response);
+	// 									console.log(result);
+	// 									$(".footer-form").trigger("reset");
 
-										$('.modal-head-name').html("Спасибо!");
-										$('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
-										$(".modal-overlay1").fadeIn();
-										$(".modal1").fadeIn();
-										$(".modal1").css({"transform" : "translateY(0%)"});
-										$("body").css({"overflow":"hidden"});
-										$('.workim__btn').removeAttr('disabled');
-								}
-						});
-				}
-		});
-	});
-
-	$(".modal-overlay1, .close-modal1").on("click", function(){
-		$submit.removeAttribute("disabled")
-		$(".modal-overlay1").fadeOut();
-		$(".modal1").fadeOut();
-		$(".modal1").css({"transform" : "translateY(300%)"});
-		$("body").css({"overflow":"visible"});
-})
-
+	// 									$('.modal-head-name').html("Спасибо!");
+	// 									$('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+	// 									$(".modal-overlay1").fadeIn();
+	// 									$(".modal1").fadeIn();
+	// 									$(".modal1").css({"transform" : "translateY(0%)"});
+	// 									$("body").css({"overflow":"hidden"});
+	// 									$('.workim__btn').removeAttr('disabled');
+	// 							}
+	// 					});
+	// 			}
+	// 	});
+	// });
 
 //gradient button hover
 $(function(){
@@ -652,7 +643,7 @@ $(function(){
     },
     submitHandler: function(form) {
       
-      sendAjaxForm(form, 'http://localhost:3000/mail.php');
+      sendAjaxForm(form, 'mail.php');
 
       function sendAjaxForm(ajax_form, url) {
           $.ajax({
@@ -662,22 +653,23 @@ $(function(){
               data: $(ajax_form).serialize(),  // Сеарилизуем объект
               beforeSend: function(data) { // событие до отправки
                 // $('.footer_btn').attr('disabled', 'disabled');
-                console.log(data);
-                $(form).trigger("reset");					
+                //console.log(data);
+                //$(form).trigger("reset");					
               },
               success: function(response) { //Данные отправлены успешно
-                  console.log(response);
+                  
                   result = $.parseJSON(response);
-                  console.log(result);
+          
                   $(form).trigger("reset");
 
-                  // $('.modal-head-name').html("Спасибо!");
-                  // $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
-                  // $(".modal-overlay1").fadeIn();
-                  // $(".modal1").fadeIn();
-                  // $(".modal1").css({"transform" : "translateY(0%)"});
-                  // $("body").css({"overflow":"hidden"});
-                  // $('.workim__btn').removeAttr('disabled');
+
+                  $('.modal-head-name').html("Спасибо!");
+                  $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+                  $(".modal-overlay1").fadeIn();
+                  $(".modal1").fadeIn();
+                  $(".modal1").css({"transform" : "translateY(0%)"});
+                  $("body").css({"overflow":"hidden"});
+                  $('.modal-form').removeClass('modal-form-active');
               }
           });
       }
@@ -716,8 +708,8 @@ $(function(){
       }
     },
     submitHandler: function(form) {
-      
-      sendAjaxForm(form, 'http://localhost:3000/mail.php');
+      //http://localhost:3000/
+      sendAjaxForm(form, 'mail.php');
 
       function sendAjaxForm(ajax_form, url) {
           $.ajax({
@@ -727,15 +719,13 @@ $(function(){
               data: $(ajax_form).serialize(),  // Сеарилизуем объект
               beforeSend: function(data) { // событие до отправки
                 // $('.footer_btn').attr('disabled', 'disabled');
-                console.log(data);
-                $(form).trigger("reset");					
+                //console.log(data);
+                //$(form).trigger("reset");					
               },
               success: function(response) { //Данные отправлены успешно
-                  console.log(response);
                   result = $.parseJSON(response);
-                  console.log(result);
                   $(form).trigger("reset");
-                  alert(1);
+
 
                   $('.modal-head-name').html("Спасибо!");
                   $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
@@ -744,6 +734,7 @@ $(function(){
                   $(".modal1").css({"transform" : "translateY(0%)"});
                   $("body").css({"overflow":"hidden"});
                   // $('.workim__btn').removeAttr('disabled');
+                  
               }
           });
       }
@@ -754,6 +745,16 @@ $(function(){
   //   e.preventDefault();
   //   alert("Ok")
   // })
+})
+
+$(function(){
+  $(".modal-overlay1, .close-modal1").on("click", function(){
+    
+    $(".modal-overlay1").fadeOut();
+    $(".modal1").fadeOut();
+    $(".modal1").css({"transform" : "translateY(300%)"});
+    $("body").css({"overflow":"visible"});
+})
 })
 
 $(function(){

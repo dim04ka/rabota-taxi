@@ -6909,7 +6909,7 @@ template {
   .modal-form .header__formbtn {
         font-size: 0.75rem;
         padding: 5px 10px;
-        width: 200px;
+        width: auto;
       height: 40px;
       padding-top: 13px;
       margin-top: 10px
