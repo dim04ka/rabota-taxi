@@ -3692,6 +3692,8 @@ template {
     -webkit-box-align: center;
             align-items: center;
     width: 33%
+
+
     
   }
 
@@ -3700,6 +3702,8 @@ template {
 .blockItems .item {
       width: 48%;
       margin-right: 0
+
+
     
   };
     }
@@ -3709,6 +3713,8 @@ template {
 .blockItems .item {
       width: 100%;
       margin-bottom: 20px
+
+
     
   }
     }
@@ -3925,6 +3931,33 @@ template {
 @media(max-width: 480px){
 
     .blockItems .item-icon-3 {
+        background-size: 49px 49px
+    }
+      }
+
+.blockItems .item-icon-purse {
+      background-image: url("../src/img/block/b-purse.png");
+      background-size: 97px 97px;
+      background-repeat: no-repeat;
+      background-position: center
+    }
+
+@media(max-width: 480px){
+
+    .blockItems .item-icon-purse {
+        background-size: 49px 49px
+    }
+      }
+
+.blockItems .item-icon-calendar {
+      background-image: url("../src/img/block/b-calendar.png");
+      background-size: 97px 97px;
+      background-repeat: no-repeat;
+      background-position: center
+    }
+
+@media(max-width: 480px){
+    .blockItems .item-icon-calendar {
         background-size: 49px 49px
     }
       }
@@ -5519,8 +5552,12 @@ template {
     }
 
 .blogs__item {
-    width: 50%
+    width: 50%;
   }
+
+.blogs__item-single {
+      width: 100%;
+    }
 
 @media(max-width: 768px){
 
@@ -5539,6 +5576,10 @@ template {
 .blogs__item-right {
       position: relative;
     }
+
+.blogs__item-right-float {
+        float: right;
+      }
 
 .blogs__item .title {
       color: #1e1e1e;
@@ -5906,13 +5947,22 @@ template {
   display: -webkit-box;
   display: flex;
   
-
-
 }
+
+.blocks-page {
+    -webkit-box-align: center;
+            align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
 .item {
   margin-right: 40px;
 }
+
+.item-page {
+    margin-bottom: 45px;
+  }
 
 .item__imgwrapper{
     width: 296px;

@@ -213,6 +213,29 @@
         background-size: 49px 49px;
       }
     }
+
+    &-icon-purse {
+      background-image: url("../src/img/block/b-purse.png");
+      background-size: 97px 97px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media(max-width: 480px){
+        background-size: 49px 49px;
+      }
+    }
+    &-icon-calendar {
+      background-image: url("../src/img/block/b-calendar.png");
+      background-size: 97px 97px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media(max-width: 480px){
+        background-size: 49px 49px;
+      }
+    }
+
+
     
   }
 

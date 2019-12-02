@@ -114,9 +114,9 @@ $(function(){
   // <-------------------------- blog ---------------------->
   $(".blog-bg__caption").animated("fadeInUp", "fadeOutDown");
   
-  $(".blogs__items").each(function(){
-    $(this).animated("fadeInRight", "fadeOutRight");
-  })
+  // $(".blogs__items").each(function(){
+  //   $(this).animated("fadeInRight", "fadeOutRight");
+  // })
   // <-------------------------- /blog ---------------------->
 
   // <-------------------------- about ---------------------->
@@ -449,7 +449,7 @@ $(function(){
 
  //скрыть часть новости блога
  $(function(){
-   let textBlog = document.querySelectorAll('.blogs__items .disc');
+   let textBlog = document.querySelectorAll('.blogs__items .disc-hide');
    //console.log(textBlog)
    textBlog.forEach((el) => {
     let maxLength = 250;
@@ -854,8 +854,16 @@ $(function(){
   })
 
   $('.block3-btn__btn-green').click(function(){
-    $('.modal-form').addClass('modal-form-active');
-    $('body').css({"overflow":"hidden"});
+    
+    let attr = $(this).attr('href');
+    if (attr == undefined) {
+      $('.modal-form').addClass('modal-form-active');
+      $('body').css({"overflow":"hidden"});
+      
+    } else {
+      return;
+    }
+
   })
 
 })
