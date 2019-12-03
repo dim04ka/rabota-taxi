@@ -202,6 +202,12 @@
           height: 52px;
         }
 
+        &-7890 {
+          background-image: url("../src/img/7890.png");
+          width: 246px;
+          height: 52px;
+        }
+
         margin: 0 auto;
         margin-bottom: 40px;
         background-repeat: no-repeat;

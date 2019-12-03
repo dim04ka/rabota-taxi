@@ -301,9 +301,11 @@
 
     h3 {
       color: #1a1a1a;
-      font-family: "Proxima Nova";
+      font-family: "Proxima Nova Bold";
       font-size: 27px;
       letter-spacing: 1.8px;
+      text-transform: uppercase;
+      line-height: 32px;
 
       @media(max-width: 1024px){
         font-size: 20px;
@@ -320,6 +322,7 @@
       max-width: 450px;
       margin: 0 auto;
       color: #1a1a1a;
+      line-height: 34px;
 
       @media(max-width: 1024px){
         font-size: 20px;
@@ -379,7 +382,7 @@
     &__item {
       width: 33%;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 80px;
 
       @media(max-width: 1024px){
         width: 50%;
@@ -417,6 +420,7 @@
         letter-spacing: 0.9px;
         margin: 0;
         line-height: 20px;
+        padding: 10px 0;
       }
       p{
         color: #363737;
@@ -425,6 +429,7 @@
         letter-spacing: 1.8px;
         padding: 0 10px;
         margin: 5px 0;
+        line-height: 27px;
 
         @media(max-width: 480px){
           font-size: 12px;

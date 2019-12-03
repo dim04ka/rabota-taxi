@@ -474,7 +474,7 @@ $(function(){
      if ($('.block5__wrap').css('max-height') == '140px') {
        $('.block5__btn-text').html('Скрыть');
        $('.block5__btn-arr').css('transform','rotate(180deg)');
-       $('.block5__wrap').css('max-height','1000px');
+       $('.block5__wrap').css('max-height','5000px');
     
      } else {
       $('.block5__wrap').css('max-height','140px');

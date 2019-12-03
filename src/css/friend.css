@@ -28,14 +28,14 @@
     }
   }
 
-  &__item-1 {
+  &__item-yandex {
     background-image: url("../src/img/yandex.png");
     width: 252px;
     height: 71px;
     background-size: cover;
   }
 
-  &__item-2 {
+  &__item-laim {
     background-image: url("../src/img/laim.png");
     width: 60px;
     height: 110px;
@@ -46,19 +46,53 @@
     }
   }
 
-  &__item-3 {
+  &__item-iq {
     background-image: url("../src/img/iq.png");
     width: 198px;
     height: 88px;
     background-size: cover;
   }
 
-  &__item-4 {
+  &__item-euro {
     background-image: url("../src/img/euro.png");
     width: 238px;
     height: 53px;
     background-size: cover;
   }
+
+  &__item-comandir {
+    background-image: url("../src/img/comandir.png");
+    width: 107px;
+    height: 119px;
+    background-size: cover;
+  }
+
+  &__item-135 {
+    background-image: url("../src/img/135.png");
+    width: 144px;
+    height: 122px;
+    background-size: cover;
+  }
+  &__item-v10 {
+    background-image: url("../src/img/v10.png");
+    width: 144px;
+    height: 122px;
+    background-size: cover;
+  }
+  &__item-uber {
+    background-image: url("../src/img/uber.png");
+    width: 144px;
+    height: 122px;
+    background-size: cover;
+  }
+  &__item-7890 {
+    background-image: url("../src/img/7890.png");
+    width: 144px;
+    height: 122px;
+    background-size: cover;
+  }
+
+
 
   &__item {
     margin: 0 auto;
@@ -67,6 +101,7 @@
     background-size: contain;
     opacity: .5;
     transition: all .3s;
+  
 
 
     @media(max-width: 480px) {

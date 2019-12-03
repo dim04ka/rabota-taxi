@@ -29,8 +29,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 142px;
-    height: 117px;
+    width: 201px;
+    height: 90px;
     margin: 0 auto;
     margin-bottom: 50px;
 
@@ -44,8 +44,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 142px;
-    height: 117px;
+    width: 230px;
+    height: 48px;
     margin: 0 auto;
     margin-bottom: 50px;
 
@@ -60,8 +60,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 142px;
-    height: 117px;
+    width: 123px;
+    height: 141px;
     margin: 0 auto;
     margin-bottom: 50px;
 
@@ -76,8 +76,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 142px;
-    height: 117px;
+    width: 371px;
+    height: 81px;
     margin: 0 auto;
     margin-bottom: 50px;
 
@@ -107,8 +107,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 142px;
-    height: 117px;
+    width: 82px;
+    height: 152px;
     margin: 0 auto;
     margin-bottom: 50px;
 
@@ -123,8 +123,23 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 142px;
-    height: 117px;
+    width: 277px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @media(max-width: 480px){
+      transform: scale(.7);
+      margin-bottom: 10px;
+    }
+  }
+  &__logo-7890 {
+    background-image: url('../src/img/logo/7890.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 277px;
+    height: 80px;
     margin: 0 auto;
     margin-bottom: 50px;
 

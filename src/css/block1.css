@@ -64,8 +64,8 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        width: 259px;
-        height: 212px;
+        width: 313px;
+        height: 140px;
 
         @media(max-width: 480px){
           width: 123px;
@@ -122,8 +122,8 @@
         height: 212px;
   
         @media(max-width: 480px){
-          width: 123px;
-          height: 100px;
+          width: 345px;
+          height: 244px;
         }
       }
       &-laim {
@@ -153,7 +153,19 @@
         }
       }
 
-
+      &-7890 {
+        background-image: url("../src/img/logo/7890.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 259px;
+        height: 212px;
+  
+        @media(max-width: 480px){
+          width: 123px;
+          height: 100px;
+        }
+      }
 
 
 

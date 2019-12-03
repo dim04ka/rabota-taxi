@@ -43,7 +43,7 @@
       cursor: pointer;
       display:inline-block;
       overflow:hidden;
-      text-transform:capitalize;
+      /* text-transform:capitalize; */
       z-index:1;
       position:relative;
       -webkit-appearance: none;
