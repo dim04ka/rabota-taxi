@@ -19,7 +19,7 @@
      jQueryObject.removeClass(inEffect).addClass(outEffect).css("opacity", "1"); 
     }; 
    }, { 
-    offset: "80%" 
+    offset: "90%" 
    }); 
  
    jQueryObject.waypoint(function(dir) { 
@@ -135,7 +135,8 @@ $(function(){
   
 // <-------------------------- section-135__container ---------------------->
 $(".section-135__container").animated("fadeInUp", "fadeOutDown");
-$(".block3 .block3-requied").animated("fadeInUp", "fadeOutDown");
+$(".block3 block3-requied-treb").animated("fadeInUp", "fadeOutDown");
+$(".block3 block3-requied-pred").animated("fadeInUp", "fadeOutDown");
 
 $(".blockItems .item").each(function(){
   $(this).animated("fadeInUp", "fadeOutDown");
@@ -770,6 +771,65 @@ $(function(){
         email: "Необходим формат адреса email" 
       }
     },
+    submitHandler: function(form) {
+      //http://localhost:3000/
+      sendAjaxForm(form, 'mail.php');
+
+      function sendAjaxForm(ajax_form, url) {
+          $.ajax({
+              url:     url, //url страницы (send.php)
+              type:     "POST", //метод отправки
+              dataType: "html",
+              data: $(ajax_form).serialize(),  // Сеарилизуем объект
+              beforeSend: function(data) { // событие до отправки
+                // $('.footer_btn').attr('disabled', 'disabled');
+                //console.log(data);
+                //$(form).trigger("reset");					
+              },
+              success: function(response) { //Данные отправлены успешно
+                  result = $.parseJSON(response);
+                  $(form).trigger("reset");
+
+
+                  $('.modal-head-name').html("Спасибо!");
+                  $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+                  $(".modal-overlay1").fadeIn();
+                  $(".modal1").fadeIn();
+                  $(".modal1").css({"transform" : "translateY(0%)"});
+                  $("body").css({"overflow":"hidden"});
+                  // $('.workim__btn').removeAttr('disabled');
+                  
+              }
+          });
+      }
+    }
+  });
+
+  $('.zayavka-section__form-validation').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      phone: {
+        required: true,
+        number: true,
+        minlength: 9,
+        maxlength: 9
+      }
+    },
+    //messages: {
+      // name: {
+      //   required: "Поле 'Имя' обязательно к заполнению",
+      //   minlength: "Введите не менее 2-х символов в поле 'Имя'"
+      // },
+      // phone: {
+      //   required: "Поле 'Телефон' обязательно к заполнению",
+      //   number: "Неверный номер",
+      //   minlength: "Номер состоит из 9 чисел",
+      //   maxlength: "Номер состоит из 9 чисел",
+      // }
+    //},
     submitHandler: function(form) {
       //http://localhost:3000/
       sendAjaxForm(form, 'mail.php');

@@ -6665,6 +6665,14 @@ template {
     }
       }
 
+.bonus-akcija__two-blocks__item-img {
+        height: 60px;
+      }
+
+.bonus-akcija__two-blocks__item-img img {
+          height: 100%;
+        }
+
 .bonus-akcija__two-blocks__item h4 {
         color: #1e7e0b;
         font-family: "Proxima Nova Bold";
@@ -6811,6 +6819,189 @@ template {
         -webkit-transform: translateX(-13%);
                 transform: translateX(-13%)
   }
+      }
+
+.zayavka-section{
+  background: url('../src/img/zayavka_bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 0
+}
+
+@media(max-width: 767px) {
+
+.zayavka-section{
+    padding: 30px 0
+}
+  }
+
+.zayavka-section__title {
+    margin-bottom: 80px
+  }
+
+@media(max-width: 767px){
+
+  .zayavka-section__title {
+      margin-bottom: 30px
+  }
+    }
+
+.zayavka-section__title p {
+      color: #ffffff;
+      font-family: "Proxima Nova Bold";
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.225rem;
+      margin: 0;
+      text-align: center;
+      line-height: 3.625rem
+    }
+
+@media(max-width: 1023px){
+
+    .zayavka-section__title p {
+        font-size: 2rem
+    }
+      }
+
+@media(max-width: 767px){
+
+    .zayavka-section__title p {
+        font-size: 1rem;
+        letter-spacing: 0.075rem;
+        line-height: 1.5625rem
+    }
+      }
+
+.zayavka-section__form {
+    text-align: center;
+  }
+
+.zayavka-section__form .zayavka-section__wrapInput {
+      margin-bottom: 80px;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: justify;
+              justify-content: space-between
+    }
+
+@media(max-width: 1023px){
+
+    .zayavka-section__form .zayavka-section__wrapInput {
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+                justify-content: center;
+        margin-bottom: 20px
+    }
+      }
+
+.zayavka-section__form .zayavka-section__wrapInput input {
+        width: 496px;
+        height: 82px;
+        border-radius: 41px;
+        background-color: #ffffff;
+        color: #b1afaf;
+        font-family: "Proxima Nova Bold";
+        font-size: 1.875rem;
+        letter-spacing: 0.1875rem;
+        border: none;
+        padding: 0 15px 0 70px;
+        margin: 0 10px
+      }
+
+@media(max-width: 1023px){
+
+      .zayavka-section__form .zayavka-section__wrapInput input {
+          margin-bottom: 20px
+      }
+        }
+
+@media(max-width: 767px){
+
+      .zayavka-section__form .zayavka-section__wrapInput input {
+          width: 203px;
+          height: 36px;
+          border-radius: 18px;
+          font-size: 0.75rem;
+          letter-spacing: 0.1875rem;
+          padding: 0 25px
+      }
+        }
+
+.zayavka-section__form .zayavka-section__wrapInput label {
+        position: absolute;
+        z-index: -1;
+        
+      }
+
+.zayavka-section__form button {
+      width: 393px;
+      height: 82px;
+      border-radius: 38px;
+      background-color: #2eafdf;
+      color: #ffffff;
+      font-family: "Proxima Nova Bold";
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18188rem;    
+      border: none;
+      margin: 0 auto;
+
+      outline: none;
+    cursor: pointer;
+    display:inline-block;
+    overflow:hidden;
+    /* text-transform: capitalize; */
+    z-index:1;
+    position:relative;
+    background: #2eafdf;
+    margin-top: 25px
+    }
+
+@media(max-width: 767px) {
+
+    .zayavka-section__form button {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+        width: 203px;
+        height: 36px;
+        border-radius: 18px;
+      
+        padding-top: 13px;
+        margin-top: 10px
+    }
+    }
+
+.zayavka-section__form button:before{
+      content:'';
+      position:absolute;
+      top:-30px;
+      left:50%;
+      -webkit-transform:translate(-50%, -50%) scale(1);
+      transform:translate(-50%, -50%) scale(1);
+      display:block;
+      width:50px;
+      height:50px;
+      background: white;
+      border-radius:50px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      z-index:-1;
+    }
+
+.zayavka-section__form button:hover{
+      box-shadow:0 5px 20px rgba(0,0,0,.5);
+       cursor:pointer;
+       -webkit-transition-delay: .1s;
+        transition-delay: .1s;
+        color: #2eafdf;
+        z-index:8
+    }
+
+.zayavka-section__form button:hover:before{
+        -webkit-transform:scale(8.3);
+        transform:scale(9.3);
       }
 
 /* ********************   form alert    ***************************************/

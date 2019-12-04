@@ -394,6 +394,14 @@
         margin-bottom: 10px;
       }
 
+      &-img {
+        height: 60px;
+
+        img {
+          height: 100%;
+        }
+      }
+
       h4 {
         color: #1e7e0b;
         font-family: "Proxima Nova Bold";
