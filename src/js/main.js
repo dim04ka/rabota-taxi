@@ -688,9 +688,9 @@ $(function(){
         required: true,
         minlength: 2
       },
-      text: {
+      textOtziv: {
         required: true,
-        minlength: 4,
+        maxlength: 150,
 
       }
     },
@@ -699,9 +699,9 @@ $(function(){
         required: "Поле 'Имя' обязательно к заполнению",
         minlength: "Введите не менее 2-х символов в поле 'Имя'"
       },
-      text: {
+      textOtziv: {
         required: "Поле обязательно к заполнению",
-        minlength: "",
+        maxlength: "Максимально 150 символов",
       }
     },
     submitHandler: function(form) {

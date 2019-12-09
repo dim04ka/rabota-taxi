@@ -4,7 +4,7 @@
 
 $result = array(
   'name' => $_POST['name'],
-  'text' => $_POST['text']
+  'text' => $_POST['textOtziv']
 );
 echo json_encode($result);
 

@@ -3161,11 +3161,10 @@ template {
 .footer__items {
     display: -webkit-box;
     display: flex;
-    display: flex;
     -webkit-box-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+            align-items: flex-start;
     text-align: center;
     position: relative;
     z-index: 2;
@@ -7359,6 +7358,20 @@ template {
           letter-spacing: 0.1875rem
     }
       }
+
+.modal-form-reviews form textarea {
+      border-radius: 45px;
+      border: none;
+      padding: 15px 25px 15px 75px;
+      font-family: "Proxima Nova";
+      font-size: 1.5rem;
+      margin: 0px 0px 45px;
+      outline: none;
+      letter-spacing: 0.15rem;
+      width: 390px;
+      min-height: 180px;
+      resize: vertical;
+    }
 
 .modal-form-reviews form input[type="submit"] {
 

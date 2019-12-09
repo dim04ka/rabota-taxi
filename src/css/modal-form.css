@@ -217,6 +217,20 @@
       }
     }
 
+    textarea {
+      border-radius: 45px;
+      border: none;
+      padding: 15px 25px 15px 75px;
+      font-family: "Proxima Nova";
+      font-size: 1.5rem;
+      margin: 0px 0px 45px;
+      outline: none;
+      letter-spacing: 0.15rem;
+      width: 390px;
+      min-height: 180px;
+      resize: vertical;
+    }
+
      input[type="submit"] {
 
         opacity: 0;
