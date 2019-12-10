@@ -958,6 +958,22 @@ $(function(){
     }
 
   })
-
 })
+
+//btn__up arrow
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 500) {
+    $(".arrowup").fadeIn();
+  } else {
+    $(".arrowup").fadeOut();
+  }
+});
+$(function ($) {
+  $(".arrowup").click(function () {
+    $("body,html").animate({
+      scrollTop: 0
+    }, 400);
+    return false;
+  });
+});
 
