@@ -122,7 +122,7 @@
         height: 212px;
   
         @media(max-width: 480px){
-          width: 345px;
+          width: 190px;
           height: 244px;
         }
       }

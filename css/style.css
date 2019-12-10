@@ -2590,8 +2590,16 @@ template {
 .work__card-text-icon-7890 {
           background-image: url("../src/img/7890.png");
           width: 246px;
-          height: 52px;
+          max-height: 100px;
+          margin-top: 40px
         }
+
+@media(max-width: 480px){
+
+        .work__card-text-icon-7890 {
+            margin-top: 0px
+        }
+          }
 
 .otziv{
     
@@ -3682,6 +3690,26 @@ template {
   }
       }
 
+@media(max-width: 340px){
+
+      .section-135__title-yandex {
+          letter-spacing: 0.125rem
+      }
+        }
+
+@media(max-width: 360px){
+
+      .section-135__title-v10 {
+          letter-spacing: 0.0625rem
+      }
+        }
+
+@media(max-width: 365px){
+      .section-135__title-com {
+          letter-spacing: 0.0625rem
+      }
+        }
+
 .section-135__bg{
     width: 380px;
     height: 20px;
@@ -3691,17 +3719,146 @@ template {
     margin: 0 auto;
     -webkit-transform: translateX(-25%);
             transform: translateX(-25%)
+
+
+
   }
 
 @media(max-width: 768px){
 
   .section-135__bg{
-        width: 140px;
-        height: 9px;
-        top: -12px;
-        -webkit-transform: translateX(-13%);
-                transform: translateX(-13%)
+      width: 140px;
+      height: 9px;
+      top: -12px;
+      -webkit-transform: translateX(-13%);
+              transform: translateX(-13%)
+
+
+
   }
+    }
+
+.section-135__bg-yandex {
+      width: 490px;
+      -webkit-transform: translateX(-20%);
+              transform: translateX(-20%)
+    }
+
+@media(max-width: 768px){
+
+    .section-135__bg-yandex {
+        width: 230px;
+        -webkit-transform: translateX(-23%);
+                transform: translateX(-23%)
+    }
+      }
+
+.section-135__bg-uber {
+      width: 490px;
+      -webkit-transform: translateX(-20%);
+              transform: translateX(-20%)
+    }
+
+@media(max-width: 768px){
+
+    .section-135__bg-uber {
+        width: 230px;
+        -webkit-transform: translateX(-23%);
+                transform: translateX(-23%)
+    }
+      }
+
+@media(max-width: 768px){
+
+    .section-135__bg-135 {
+        width: 230px;
+        -webkit-transform: translateX(-23%);
+                transform: translateX(-23%)
+    }
+      }
+
+@media(max-width: 768px){
+
+    
+    .section-135__bg-iq {
+        width: 230px;
+        -webkit-transform: translateX(-23%);
+                transform: translateX(-23%)
+    }
+      }
+
+.section-135__bg-v10 {
+      width: 490px;
+      -webkit-transform: translateX(-28%);
+              transform: translateX(-28%)
+    }
+
+@media(max-width: 768px){
+
+    .section-135__bg-v10 {
+        width: 230px;
+        -webkit-transform: translateX(-35%);
+                transform: translateX(-35%)
+    }
+      }
+
+.section-135__bg-com {
+      width: 490px;
+      -webkit-transform: translateX(-28%);
+              transform: translateX(-28%)
+    }
+
+@media(max-width: 768px){
+
+    .section-135__bg-com {
+        width: 230px;
+        -webkit-transform: translateX(-35%);
+                transform: translateX(-35%)
+    }
+      }
+
+.section-135__bg-laim {
+      width: 440px;
+      -webkit-transform: translateX(-28%);
+              transform: translateX(-28%)
+    }
+
+@media(max-width: 768px){
+
+    .section-135__bg-laim {
+        width: 230px;
+        -webkit-transform: translateX(-22%);
+                transform: translateX(-22%)
+    }
+      }
+
+.section-135__bg-euro {
+      width: 470px;
+      -webkit-transform: translateX(-20%);
+              transform: translateX(-20%)
+    }
+
+@media(max-width: 768px){
+    .section-135__bg-euro {
+        width: 220px;
+        -webkit-transform: translateX(-22%);
+                transform: translateX(-22%)
+    }
+      }
+
+.section-135__bg-7890 {
+      width: 470px;
+      -webkit-transform: translateX(-20%);
+              transform: translateX(-20%)
+    }
+
+@media(max-width: 768px){
+
+    .section-135__bg-7890 {
+        width: 220px;
+        -webkit-transform: translateX(-22%);
+                transform: translateX(-22%)
+    }
       }
 
 .blockItems {
@@ -3876,7 +4033,7 @@ template {
 
 @media(max-width: 480px){
       .blockItems .item-logo-com {
-          width: 345px;
+          width: 190px;
           height: 244px
       }
         }
@@ -4284,6 +4441,14 @@ template {
 .block3-btn__btn-blue:hover{
           color: #2eafdf;
         }
+
+@media(min-width: 480px){
+
+        .block3-btn__btn-blue-vakan {
+            line-height: 2.25rem
+          
+        }
+          }
 
 .block3-requied {
 

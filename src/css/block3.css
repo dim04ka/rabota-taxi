@@ -47,6 +47,7 @@
       z-index:1;
       position:relative;
       -webkit-appearance: none;
+      
 
       @media(max-width: 480px) {
         width: 189px;
@@ -102,6 +103,14 @@
 
         &:hover{
           color: #2eafdf;
+        }
+
+        &-vakan {
+
+          @media(min-width: 480px){
+            line-height: 36px;
+          }
+          
         }
       }
     }

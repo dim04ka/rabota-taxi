@@ -36,6 +36,23 @@
         font-size: 20px;
       }
 
+      &-yandex {
+        @media(max-width: 340px){
+          letter-spacing: 2px;
+        }
+      }
+
+      &-v10 {
+        @media(max-width: 360px){
+          letter-spacing: 1px;
+        }
+      }
+      &-com {
+        @media(max-width: 365px){
+          letter-spacing: 1px;
+        }
+      }
+
 
   }
 
@@ -48,12 +65,99 @@
     margin: 0 auto;
     transform: translateX(-25%);
 
+    @media(max-width: 768px){
+      width: 140px;
+      height: 9px;
+      top: -12px;
+      transform: translateX(-13%);
+    }
+
+    &-yandex {
+      width: 490px;
+      transform: translateX(-20%);
+
       @media(max-width: 768px){
-        width: 140px;
-        height: 9px;
-        top: -12px;
-        transform: translateX(-13%)
+        width: 230px;
+        transform: translateX(-23%);
       }
+    }
+
+    &-uber {
+      width: 490px;
+      transform: translateX(-20%);
+
+      @media(max-width: 768px){
+        width: 230px;
+        transform: translateX(-23%);
+      }
+    }
+
+    &-135 {
+      @media(max-width: 768px){
+        width: 230px;
+        transform: translateX(-23%);
+      }
+    }
+
+    
+    &-iq {
+      @media(max-width: 768px){
+        width: 230px;
+        transform: translateX(-23%);
+      }
+    }
+
+    &-v10 {
+      width: 490px;
+      transform: translateX(-28%);
+
+      @media(max-width: 768px){
+        width: 230px;
+        transform: translateX(-35%);
+      }
+    }
+
+    &-com {
+      width: 490px;
+      transform: translateX(-28%);
+
+      @media(max-width: 768px){
+        width: 230px;
+        transform: translateX(-35%);
+      }
+    }
+
+    &-laim {
+      width: 440px;
+      transform: translateX(-28%);
+
+      @media(max-width: 768px){
+        width: 230px;
+        transform: translateX(-22%);
+      }
+    }
+    &-euro {
+      width: 470px;
+      transform: translateX(-20%);
+
+      @media(max-width: 768px){
+        width: 220px;
+        transform: translateX(-22%);
+      }
+    }
+
+    &-7890 {
+      width: 470px;
+      transform: translateX(-20%);
+
+      @media(max-width: 768px){
+        width: 220px;
+        transform: translateX(-22%);
+      }
+    }
+
+
+
   }
 
 }

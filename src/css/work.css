@@ -205,7 +205,12 @@
         &-7890 {
           background-image: url("../src/img/7890.png");
           width: 246px;
-          height: 52px;
+          max-height: 100px;
+          margin-top: 40px;
+
+          @media(max-width: 480px){
+            margin-top: 0px;
+          }
         }
 
         margin: 0 auto;
