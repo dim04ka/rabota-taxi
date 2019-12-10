@@ -229,6 +229,12 @@
       width: 390px;
       min-height: 180px;
       resize: vertical;
+
+      @media(max-width: 480px){
+        width: 100%;
+        font-size: 14px;
+        padding: 20px;
+      }
     }
 
      input[type="submit"] {

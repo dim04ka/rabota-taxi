@@ -626,7 +626,7 @@ $(function(){
         required: true,
         number: true,
         minlength: 9,
-        maxlength: 9
+        maxlength: 12
       },
       email: {
         email: true
@@ -640,8 +640,8 @@ $(function(){
       phone: {
         required: "Поле 'Телефон' обязательно к заполнению",
         number: "Неверный номер",
-        minlength: "Номер состоит из 9 чисел",
-        maxlength: "Номер состоит из 9 чисел",
+        minlength: "В номере мало цифр",
+        maxlength: "В номере много цифр",
       },
       email: {
         email: "Необходим формат адреса email" 
@@ -671,6 +671,7 @@ $(function(){
 
                   $('.modal-head-name').html("Спасибо!");
                   $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+                  $('.modal-head-distance').html("Напомните менеджеру про подарок");
                   $(".modal-overlay1").fadeIn();
                   $(".modal1").fadeIn();
                   $(".modal1").css({"transform" : "translateY(0%)"});
@@ -740,6 +741,36 @@ $(function(){
   });
 
 
+  $(function(){
+    let inpHead = document.querySelector('.header__form-validation .telval');
+    let inpModal = document.querySelector('.modal__form-validation .telval');
+    let inpZayavka = document.querySelector('.zayavka-section__form-validation .telval');
+
+    if (inpHead != null) {
+      inpHead.addEventListener('keypress', e => {
+        // Отменяем ввод не цифр
+        if(!/\d/.test(e.key))
+          e.preventDefault();
+      });
+    }
+
+    if (inpModal != null) {
+      inpModal.addEventListener('keypress', e => {
+        // Отменяем ввод не цифр
+        if(!/\d/.test(e.key))
+          e.preventDefault();
+      });
+    }
+
+    if (inpZayavka != null) {
+      inpZayavka.addEventListener('keypress', e => {
+        // Отменяем ввод не цифр
+        if(!/\d/.test(e.key))
+          e.preventDefault();
+      });
+     }
+  })
+
   $('.header__form-validation').validate({
     rules: {
       name: {
@@ -750,7 +781,7 @@ $(function(){
         required: true,
         number: true,
         minlength: 9,
-        maxlength: 9
+        maxlength: 12
       },
       email: {
         email: true
@@ -764,8 +795,8 @@ $(function(){
       phone: {
         required: "Поле 'Телефон' обязательно к заполнению",
         number: "Неверный номер",
-        minlength: "Номер состоит из 9 чисел",
-        maxlength: "Номер состоит из 9 чисел",
+        minlength: "В номере мало цифр",
+        maxlength: "В номере много цифр",
       },
       email: {
         email: "Необходим формат адреса email" 
@@ -793,6 +824,7 @@ $(function(){
 
                   $('.modal-head-name').html("Спасибо!");
                   $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+                  $('.modal-head-distance').html("Напомните менеджеру про подарок");
                   $(".modal-overlay1").fadeIn();
                   $(".modal1").fadeIn();
                   $(".modal1").css({"transform" : "translateY(0%)"});
@@ -815,7 +847,7 @@ $(function(){
         required: true,
         number: true,
         minlength: 9,
-        maxlength: 9
+        maxlength: 12
       }
     },
     //messages: {
@@ -852,6 +884,7 @@ $(function(){
 
                   $('.modal-head-name').html("Спасибо!");
                   $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+                  $('.modal-head-distance').html("Напомните менеджеру про подарок");
                   $(".modal-overlay1").fadeIn();
                   $(".modal1").fadeIn();
                   $(".modal1").css({"transform" : "translateY(0%)"});

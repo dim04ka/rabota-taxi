@@ -68,6 +68,11 @@
       letter-spacing: 0.8px;
       margin-bottom: 30px;
     }
+
+    span {
+      font-family: "Proxima";
+      color: #403f3f;
+    }
   }
 
   .itemb {
